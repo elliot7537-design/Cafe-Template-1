@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Café Madera — Café artesanal en Oaxaca, México. Coffee, té, matcha y desayuno con alma mexicana.">
+  <title>Café Madera — Oaxaca, México</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="loading">
+
+  <!-- Page Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__logo">CAFÉ MADERA</div>
+      <div class="loader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <div class="nav__left">
+        <a href="#menu" data-i18n="nav.granos">Granos</a>
+        <a href="#menu" data-i18n="nav.tienda">Tienda</a>
+        <a href="#menu" data-i18n="nav.menu">Nuestro Menú</a>
+        <a href="#testimonials" data-i18n="nav.testimonios">Testimonios</a>
+      </div>
+      <a href="#hero" class="nav__logo">CAFÉ MADERA<sup>®</sup></a>
+      <div class="nav__right">
+        <a href="#" data-i18n="nav.empleo">Empleo</a>
+        <a href="#contact" data-i18n="nav.contacto">Contacto</a>
+        <a href="#contact" class="nav__location" data-i18n="nav.location">Oaxaca, México</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span class="lang-toggle__text">EN</span>
+        </button>
+      </div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <div class="nav__mobile-links">
+        <a href="#menu" data-i18n="nav.granos">Granos</a>
+        <a href="#menu" data-i18n="nav.tienda">Tienda</a>
+        <a href="#menu" data-i18n="nav.menu">Nuestro Menú</a>
+        <a href="#testimonials" data-i18n="nav.testimonios">Testimonios</a>
+        <a href="#" data-i18n="nav.empleo">Empleo</a>
+        <a href="#contact" data-i18n="nav.contacto">Contacto</a>
+        <button class="lang-toggle lang-toggle--mobile" id="langToggleMobile">
+          <span class="lang-toggle__text">EN</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" id="heroBg" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow hero-anim" data-i18n="hero.eyebrow">#SINCAFE SOLO CAFE</p>
+      <h1 class="hero__headline">
+        <span class="hero__line hero-anim" style="--delay:0.1s" data-i18n="hero.line1">Café Que</span>
+        <em class="hero__line hero__line--italic hero-anim" style="--delay:0.2s" data-i18n="hero.line2">Despierta.</em>
+      </h1>
+      <p class="hero__tagline hero-anim" style="--delay:0.35s" data-i18n="hero.tagline">
+        Tostado con carácter. Servido con alma.<br>Sin pretensiones, solo café de verdad.
+      </p>
+      <div class="hero__ctas hero-anim" style="--delay:0.5s">
+        <a href="#menu" class="btn btn--primary" data-i18n="hero.cta1">Ordenar Ahora</a>
+        <a href="#about" class="btn btn--outline" data-i18n="hero.cta2">Ver Nuestro Espacio</a>
+      </div>
+    </div>
+    <div class="hero__aside hero-anim" style="--delay:0.6s">
+      <p data-i18n="hero.sideText">Despierta.<br>Trabaja duro.<br>Repite.</p>
+    </div>
+    <div class="hero__bottom">
+      <span data-i18n="hero.est">EST. 2015 — STILL HOT, ALIVE</span>
+    </div>
+  </section>
+
+  <!-- Ticker -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span class="ticker__item" data-i18n="ticker.text">CAFÉ &nbsp;&middot;&nbsp; MATCHA &nbsp;&middot;&nbsp; TÉ &nbsp;&middot;&nbsp; PASTELES &nbsp;&middot;&nbsp; DESAYUNO &nbsp;&middot;&nbsp; PAN DULCE &nbsp;&middot;&nbsp; ESPRESSO &nbsp;&middot;&nbsp; GRANOS DE OAXACA &nbsp;&middot;&nbsp;</span>
+      <span class="ticker__item" data-i18n="ticker.text" aria-hidden="true">CAFÉ &nbsp;&middot;&nbsp; MATCHA &nbsp;&middot;&nbsp; TÉ &nbsp;&middot;&nbsp; PASTELES &nbsp;&middot;&nbsp; DESAYUNO &nbsp;&middot;&nbsp; PAN DULCE &nbsp;&middot;&nbsp; ESPRESSO &nbsp;&middot;&nbsp; GRANOS DE OAXACA &nbsp;&middot;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__text">
+        <h2 class="about__headline">
+          <span class="reveal-line"><span data-i18n="about.line1">No somos un café.</span></span>
+          <span class="reveal-line"><em data-i18n="about.line2">Tu Cuartel General.</em></span>
+        </h2>
+        <p class="about__body reveal" data-i18n="about.body">
+          No somos una franquicia. No seguimos tendencias. Tostamos, molemos y preparamos para los que ansían café de verdad — no un accesorio de estilo de vida. Granos de agricultores locales, tostados frescos, preparados con manos que no tiemblan.
+        </p>
+        <a href="#menu" class="about__cta reveal" data-i18n="about.cta">Explorar Más →</a>
+        <div class="about__stats reveal">
+          <div class="stat">
+            <span class="stat__number" data-count="10">0</span>
+            <span class="stat__suffix">+</span>
+            <span class="stat__label" data-i18n="stats.years">Años</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="50000">0</span>
+            <span class="stat__suffix">+</span>
+            <span class="stat__label" data-i18n="stats.cups">Tazas Servidas</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="12">0</span>
+            <span class="stat__suffix"></span>
+            <span class="stat__label" data-i18n="stats.farms">Fincas Locales</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__media">
+        <div class="about__image-main reveal-right">
+          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=900&q=80" alt="Barista trabajando" loading="lazy">
+        </div>
+        <div class="about__image-circle reveal-right" style="--delay:0.2s">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&q=80" alt="Latte art" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <div class="menu__inner">
+      <div class="menu__header reveal">
+        <h2><span data-i18n="menu.title">Nuestro Menú</span></h2>
+        <p data-i18n="menu.subtitle">Bebidas y platillos preparados con pasión y tradición mexicana</p>
+      </div>
+      <div class="menu__grid">
+
+        <div class="menu-card reveal" style="--delay:0.1s">
+          <div class="menu-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="Café" loading="lazy">
+            <div class="menu-card__overlay">
+              <a href="#" class="menu-card__btn" data-i18n="menu.viewAll">Ver Todo</a>
+            </div>
+          </div>
+          <div class="menu-card__body">
+            <h3 data-i18n="menu.coffee">Café</h3>
+            <ul>
+              <li><span data-i18n="items.espresso">Espresso</span><span>$45</span></li>
+              <li><span data-i18n="items.americano">Americano</span><span>$50</span></li>
+              <li><span data-i18n="items.cafeOlla">Café de Olla</span><span>$55</span></li>
+              <li><span data-i18n="items.latte">Latte</span><span>$65</span></li>
+              <li><span data-i18n="items.cappuccino">Cappuccino</span><span>$65</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" style="--delay:0.2s">
+          <div class="menu-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80" alt="Té" loading="lazy">
+            <div class="menu-card__overlay">
+              <a href="#" class="menu-card__btn" data-i18n="menu.viewAll">Ver Todo</a>
+            </div>
+          </div>
+          <div class="menu-card__body">
+            <h3 data-i18n="menu.tea">Té</h3>
+            <ul>
+              <li><span data-i18n="items.hibisco">Té de Hibisco</span><span>$45</span></li>
+              <li><span data-i18n="items.verde">Té Verde</span><span>$50</span></li>
+              <li><span data-i18n="items.chai">Chai con Canela</span><span>$60</span></li>
+              <li><span data-i18n="items.manzana">Té Manzana</span><span>$50</span></li>
+              <li><span data-i18n="items.menta">Té de Menta</span><span>$45</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" style="--delay:0.3s">
+          <div class="menu-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80" alt="Matcha" loading="lazy">
+            <div class="menu-card__overlay">
+              <a href="#" class="menu-card__btn" data-i18n="menu.viewAll">Ver Todo</a>
+            </div>
+          </div>
+          <div class="menu-card__body">
+            <h3 data-i18n="menu.matcha">Matcha</h3>
+            <ul>
+              <li><span data-i18n="items.matchaLatte">Matcha Latte</span><span>$70</span></li>
+              <li><span data-i18n="items.matchaOat">Matcha con Avena</span><span>$75</span></li>
+              <li><span data-i18n="items.matchaIce">Matcha Helado</span><span>$75</span></li>
+              <li><span data-i18n="items.matchaCinnamon">Matcha con Canela</span><span>$75</span></li>
+              <li><span data-i18n="items.matchaCold">Matcha Cold Brew</span><span>$80</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" style="--delay:0.4s">
+          <div class="menu-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80" alt="Desayuno" loading="lazy">
+            <div class="menu-card__overlay">
+              <a href="#" class="menu-card__btn" data-i18n="menu.viewAll">Ver Todo</a>
+            </div>
+          </div>
+          <div class="menu-card__body">
+            <h3 data-i18n="menu.breakfast">Desayuno</h3>
+            <ul>
+              <li><span data-i18n="items.chilaquiles">Chilaquiles</span><span>$120</span></li>
+              <li><span data-i18n="items.huevos">Huevos Rancheros</span><span>$115</span></li>
+              <li><span data-i18n="items.avocado">Avocado Toast</span><span>$95</span></li>
+              <li><span data-i18n="items.enchiladas">Enchiladas de Desayuno</span><span>$130</span></li>
+              <li><span data-i18n="items.tamales">Tamales</span><span>$85</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pastries Section -->
+  <section class="pastries" id="pastries">
+    <div class="pastries__inner">
+      <div class="pastries__left">
+        <p class="section-label reveal" data-i18n="pastries.label">PAN DULCE &amp; PASTELES</p>
+        <h2 class="pastries__headline">
+          <span class="reveal-line"><span data-i18n="pastries.title1">Hecho con</span></span>
+          <span class="reveal-line"><em data-i18n="pastries.title2">Amor y Harina</em></span>
+        </h2>
+        <p class="pastries__body reveal" data-i18n="pastries.body">
+          Nuestro pan dulce es elaborado cada mañana por manos oaxaqueñas. Conchas suaves, polvorones crujientes, cuernos de mantequilla — tradición en cada mordida.
+        </p>
+        <div class="pastries__list">
+          <div class="pastry-row reveal" style="--delay:0.05s">
+            <span data-i18n="pastry.conchas">Conchas</span><span>$35</span>
+          </div>
+          <div class="pastry-row reveal" style="--delay:0.1s">
+            <span data-i18n="pastry.polvorones">Polvorones</span><span>$30</span>
+          </div>
+          <div class="pastry-row reveal" style="--delay:0.15s">
+            <span data-i18n="pastry.cuernos">Cuernos de Mantequilla</span><span>$45</span>
+          </div>
+          <div class="pastry-row reveal" style="--delay:0.2s">
+            <span data-i18n="pastry.churros">Churros con Chocolate</span><span>$55</span>
+          </div>
+          <div class="pastry-row reveal" style="--delay:0.25s">
+            <span data-i18n="pastry.empanadas">Empanadas de Fruta</span><span>$50</span>
+          </div>
+        </div>
+      </div>
+      <div class="pastries__right">
+        <div class="pastries__img-main reveal-right">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Pan dulce y pasteles" loading="lazy">
+        </div>
+        <div class="pastries__img-circle reveal-right" style="--delay:0.2s">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80" alt="Conchas" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Bold Section -->
+  <section class="products" id="products">
+    <div class="products__bg" style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="products__overlay"></div>
+    <div class="products__content">
+      <p class="section-label section-label--light reveal" data-i18n="products.label">ROASTERY BEAN PRODUCTS</p>
+      <div class="products__big-text" aria-hidden="true">
+        <span class="reveal-up-big" style="--delay:0.0s" data-i18n="products.bigWord1">NUESTROS</span>
+        <span class="reveal-up-big" style="--delay:0.1s" data-i18n="products.bigWord2">BEANS</span>
+        <span class="reveal-up-big" style="--delay:0.2s" data-i18n="products.bigWord3">&amp; PRODUCTOS</span>
+      </div>
+      <div class="products__pills reveal" style="--delay:0.3s">
+        <div class="product-pill" data-i18n="products.heavy">Intenso &amp;<br>Amargo</div>
+        <div class="product-pill" data-i18n="products.smooth">Smooth<br>Criminal</div>
+        <div class="product-pill" data-i18n="products.soft">Suave &amp;<br>Aromático</div>
+      </div>
+      <a href="#" class="btn btn--white reveal" style="--delay:0.4s" data-i18n="products.cta">Comprar Granos</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__inner">
+      <div class="testimonials__header">
+        <h2>
+          <span class="reveal-line"><span data-i18n="testimonials.line1">Lo Que Dicen</span></span>
+          <span class="reveal-line"><em data-i18n="testimonials.line2">Nuestros Clientes</em></span>
+        </h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial reveal" style="--delay:0.1s">
+          <p class="testimonial__quote" data-i18n="t1.quote">"Vine por un café, me quedé por toda una semana de café. Sin mentiras, el mejor espresso de Oaxaca."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Ana García" loading="lazy">
+            </div>
+            <div class="testimonial__info">
+              <strong data-i18n="t1.name">Ana García</strong>
+              <span data-i18n="t1.location">Ciudad de México</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial reveal" style="--delay:0.2s">
+          <p class="testimonial__quote" data-i18n="t2.quote">"El matcha con canela es una experiencia. No hay nada igual. Ya es mi lugar de trabajo remoto favorito."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Carlos Mendoza" loading="lazy">
+            </div>
+            <div class="testimonial__info">
+              <strong data-i18n="t2.name">Carlos Mendoza</strong>
+              <span data-i18n="t2.location">Guadalajara</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial reveal" style="--delay:0.3s">
+          <p class="testimonial__quote" data-i18n="t3.quote">"Los chilaquiles y un café de olla por la mañana. Perfecta combinación. Regresaré pronto."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80" alt="Sofía Ramírez" loading="lazy">
+            </div>
+            <div class="testimonial__info">
+              <strong data-i18n="t3.name">Sofía Ramírez</strong>
+              <span data-i18n="t3.location">Oaxaca</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer__top">
+      <div class="footer__brand reveal">
+        <div class="footer__logo">CAFÉ MADERA<sup>®</sup></div>
+        <p data-i18n="footer.tagline">Tostado con carácter.<br>Oaxaca, México.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+      <div class="footer__col reveal" style="--delay:0.1s">
+        <h4 data-i18n="footer.visitUs">Visítanos</h4>
+        <p data-i18n="footer.address">Calle Independencia 42<br>Centro Histórico<br>Oaxaca de Juárez, Oax.</p>
+      </div>
+      <div class="footer__col reveal" style="--delay:0.2s">
+        <h4 data-i18n="footer.hours">Horario</h4>
+        <ul class="footer__hours">
+          <li><span data-i18n="footer.weekdays">Lun – Vie</span><span>7:00 – 21:00</span></li>
+          <li><span data-i18n="footer.weekends">Sáb – Dom</span><span>8:00 – 22:00</span></li>
+        </ul>
+      </div>
+      <div class="footer__col reveal" style="--delay:0.3s">
+        <h4 data-i18n="footer.newsletter">Mantente Conectado</h4>
+        <p data-i18n="footer.newsletterSub">Suscríbete para recibir noticias sobre nuestros granos y eventos.</p>
+        <form class="footer__form" onsubmit="return false;">
+          <input type="email" data-i18n-placeholder="footer.emailPlaceholder" placeholder="tu@email.com" aria-label="Email">
+          <button type="submit" data-i18n="footer.subscribe">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p data-i18n="footer.rights">© 2025 Café Madera. Todos los derechos reservados.</p>
+      <nav class="footer__nav">
+        <a href="#" data-i18n="footer.privacy">Privacidad</a>
+        <a href="#" data-i18n="footer.terms">Términos</a>
+        <a href="#" data-i18n="footer.cookies">Cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -80,17 +80,18 @@ const translations = {
     "products.soft":     "Suave &\nAromático",
     "products.cta":      "Comprar Granos",
 
-    "testimonials.line1": "Lo Que Dicen",
-    "testimonials.line2": "Nuestros Clientes",
-    "t1.quote":   "\u201cVine por un café, me quedé por toda una semana de café. Sin mentiras, el mejor espresso de Oaxaca.\u201d",
-    "t1.name":    "Ana García",
-    "t1.location":"Ciudad de México",
-    "t2.quote":   "\u201cEl matcha con canela es una experiencia. No hay nada igual. Ya es mi lugar de trabajo remoto favorito.\u201d",
-    "t2.name":    "Carlos Mendoza",
-    "t2.location":"Guadalajara",
-    "t3.quote":   "\u201cLos chilaquiles y un café de olla por la mañana. Perfecta combinación. Regresaré pronto.\u201d",
-    "t3.name":    "Sofía Ramírez",
-    "t3.location":"Oaxaca",
+    "testimonials.line1": "En Instagram",
+    "testimonials.line2": "Nos Quieren",
+    "testimonials.sub":   "Fotos reales de nuestra comunidad",
+    "ig.tagged":   "Café Madera, Oaxaca",
+    "ig.likes":    "Me gusta",
+    "ig.follow":   "Síguenos en Instagram",
+    "t1.caption":  " Vine por un café, me quedé por toda una semana ☕🫶 No hay nada igual en Oaxaca. El espresso aquí es vida. Sin mentiras.",
+    "t1.time":     "hace 2 días",
+    "t2.caption":  " El matcha con canela 🍵✨ No hay nada igual en el mundo. Ya es mi oficina favorita. Vengo todos los días.",
+    "t2.time":     "hace 5 días",
+    "t3.caption":  " Chilaquiles + café de olla = el desayuno perfecto 🌮☕ Regresaré este fin de semana sin duda. Oaxaca tiene el mejor café.",
+    "t3.time":     "hace 1 semana",
 
     "footer.tagline":       "Tostado con carácter.\nOaxaca, México.",
     "footer.visitUs":       "Visítanos",
@@ -184,17 +185,18 @@ const translations = {
     "products.soft":     "Soft &\nAromatic",
     "products.cta":      "Shop Beans",
 
-    "testimonials.line1": "What Our",
-    "testimonials.line2": "Customers Say",
-    "t1.quote":   "\u201cI came for a coffee, stayed for a whole week of coffee. Honestly, the best espresso in Oaxaca.\u201d",
-    "t1.name":    "Ana García",
-    "t1.location":"Mexico City",
-    "t2.quote":   "\u201cThe cinnamon matcha is an experience. Nothing like it. It\u2019s now my favorite remote work spot.\u201d",
-    "t2.name":    "Carlos Mendoza",
-    "t2.location":"Guadalajara",
-    "t3.quote":   "\u201cChilaquiles and a café de olla in the morning. Perfect combination. I\u2019ll be back soon.\u201d",
-    "t3.name":    "Sofía Ramírez",
-    "t3.location":"Oaxaca",
+    "testimonials.line1": "On Instagram",
+    "testimonials.line2": "They Love Us",
+    "testimonials.sub":   "Real photos from our community",
+    "ig.tagged":   "Café Madera, Oaxaca",
+    "ig.likes":    "likes",
+    "ig.follow":   "Follow us on Instagram",
+    "t1.caption":  " Came for a coffee, stayed for a whole week ☕🫶 Nothing like it in Oaxaca. The espresso here is life. No lies.",
+    "t1.time":     "2 days ago",
+    "t2.caption":  " The cinnamon matcha 🍵✨ Nothing like it in the world. Already my favorite office. Here every day.",
+    "t2.time":     "5 days ago",
+    "t3.caption":  " Chilaquiles + café de olla = the perfect breakfast 🌮☕ Coming back this weekend for sure. Oaxaca has the best coffee.",
+    "t3.time":     "1 week ago",
 
     "footer.tagline":       "Roasted with character.\nOaxaca, Mexico.",
     "footer.visitUs":       "Visit Us",
@@ -335,22 +337,21 @@ function observeAll() {
   $$('.reveal, .reveal-right, .reveal-up-big').forEach(el => revealObserver.observe(el));
 }
 
-/* Line reveal for headings */
-const lineObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
+/* Heading line reveal — observe the parent heading, not children */
+const headingObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
     if (!entry.isIntersecting) return;
-    const lines = $$('.reveal-line', entry.target.closest('h2, h3, .pastries__headline, .about__headline, .testimonials__header, .pastries__headline'));
-    const allLines = lines.length ? lines : $$('.reveal-line', entry.target.parentElement);
-
-    allLines.forEach((line, idx) => {
-      setTimeout(() => line.classList.add('is-visible'), idx * 120);
+    $$('.reveal-line', entry.target).forEach((line, i) => {
+      setTimeout(() => line.classList.add('is-visible'), i * 130);
     });
-    lineObserver.unobserve(entry.target);
+    headingObserver.unobserve(entry.target);
   });
-}, { threshold: 0.2 });
+}, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
 
 function observeLines() {
-  $$('.reveal-line > *').forEach(inner => lineObserver.observe(inner));
+  $$('.about__headline, .pastries__headline, .testimonials__heading').forEach(el => {
+    headingObserver.observe(el);
+  });
 }
 
 /* --- Counter Animation ----------------------------------- */
@@ -385,6 +386,25 @@ $$('a[href^="#"]').forEach(link => {
     const navH = nav.offsetHeight;
     const top = target.getBoundingClientRect().top + window.pageYOffset - navH;
     window.scrollTo({ top, behavior: 'smooth' });
+  });
+});
+
+/* --- Instagram heart interactions ----------------------- */
+$$('.ig-action--heart').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const liked = btn.classList.toggle('is-liked');
+    btn.classList.remove('heart-pop');
+    void btn.offsetWidth; // reflow to restart animation
+    btn.classList.add('heart-pop');
+
+    const likesEl = btn.closest('.ig-post').querySelector('.ig-post__likes strong');
+    if (!likesEl) return;
+    const text = likesEl.textContent;
+    const match = text.match(/[\d,]+/);
+    if (!match) return;
+    const current = parseInt(match[0].replace(/,/g, ''), 10);
+    const next = liked ? current + 1 : current - 1;
+    likesEl.textContent = text.replace(/[\d,]+/, next.toLocaleString('es-MX'));
   });
 });
 

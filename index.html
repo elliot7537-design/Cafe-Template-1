@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Café Madera — Café artesanal en Oaxaca, México. Coffee, té, matcha y desayuno con alma mexicana.">
+  <meta name="google" content="notranslate">
   <title>Café Madera — Oaxaca, México</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +12,9 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="loading">
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
   <!-- Page Loader -->
   <div class="loader" id="loader">
@@ -34,10 +38,10 @@
         <a href="#" data-i18n="nav.empleo">Empleo</a>
         <a href="#contact" data-i18n="nav.contacto">Contacto</a>
         <a href="#contact" class="nav__location" data-i18n="nav.location">Oaxaca, México</a>
-        <button class="lang-toggle" id="langToggle" aria-label="Toggle language" data-lang="es">
-          <span class="lang-toggle__opt" data-opt="es">ES</span>
+        <button class="lang-toggle notranslate" id="langToggle" aria-label="Toggle language" data-lang="es" translate="no">
+          <span class="lang-toggle__opt" data-opt="es">ESP</span>
           <span class="lang-toggle__sep" aria-hidden="true">/</span>
-          <span class="lang-toggle__opt" data-opt="en">EN</span>
+          <span class="lang-toggle__opt" data-opt="en">ENG</span>
         </button>
       </div>
       <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
@@ -54,10 +58,10 @@
         <a href="#testimonials" data-i18n="nav.testimonios">Testimonios</a>
         <a href="#" data-i18n="nav.empleo">Empleo</a>
         <a href="#contact" data-i18n="nav.contacto">Contacto</a>
-        <button class="lang-toggle lang-toggle--mobile" id="langToggleMobile" aria-label="Toggle language" data-lang="es">
-          <span class="lang-toggle__opt" data-opt="es">ES</span>
+        <button class="lang-toggle lang-toggle--mobile notranslate" id="langToggleMobile" aria-label="Toggle language" data-lang="es" translate="no">
+          <span class="lang-toggle__opt" data-opt="es">ESP</span>
           <span class="lang-toggle__sep" aria-hidden="true">/</span>
-          <span class="lang-toggle__opt" data-opt="en">EN</span>
+          <span class="lang-toggle__opt" data-opt="en">ENG</span>
         </button>
       </div>
     </div>
@@ -128,7 +132,7 @@
         </div>
       </div>
       <div class="about__media">
-        <div class="about__image-main reveal-right">
+        <div class="about__image-main reveal-right reveal-clip">
           <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=900&q=80" alt="Barista trabajando" loading="lazy">
         </div>
         <div class="about__image-circle reveal-right" style="--delay:0.2s">
@@ -585,7 +589,7 @@
         </div>
       </div>
       <div class="pastries__right">
-        <div class="pastries__img-main reveal-right">
+        <div class="pastries__img-main reveal-right reveal-clip">
           <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Pan dulce y pasteles" loading="lazy">
         </div>
         <div class="pastries__img-circle reveal-right" style="--delay:0.2s">

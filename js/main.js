@@ -430,7 +430,7 @@ const headingObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
 
 function observeLines() {
-  $$('.about__headline, .pastries__headline, .testimonials__heading').forEach(el => {
+  $$('.about__headline, .pastries__headline, .testimonials__heading, .dishes__heading, .products__heading').forEach(el => {
     headingObserver.observe(el);
   });
 }

@@ -953,9 +953,6 @@ sup { font-size: 0.5em; vertical-align: super; }
   position: absolute;
   inset: 0;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background:
     linear-gradient(135deg, var(--warm-brown), var(--dark-mid));
 }
@@ -967,23 +964,7 @@ sup { font-size: 0.5em; vertical-align: super; }
 }
 .dish-card:hover .dish-card__img img { transform: scale(1.08); }
 
-/* Illustrated per-dish art: emoji centered on a tuned gradient */
-.dish-card__icon {
-  font-size: 108px;
-  line-height: 1;
-  display: block;
-  filter: drop-shadow(0 10px 24px rgba(0,0,0,0.35));
-  transform: translateY(-4px);
-  transition: transform 0.5s var(--ease-out);
-}
-.dish-card--hero .dish-card__icon {
-  font-size: clamp(140px, 20vw, 220px);
-}
-.dish-card:hover .dish-card__icon {
-  transform: translateY(-4px) scale(1.06) rotate(-3deg);
-}
-
-/* Per-dish colour backgrounds — each evokes the dish's real tones */
+/* Per-dish colour fallback — shows through if the photo fails to load */
 .dish-card__img--chilaquiles {
   background:
     radial-gradient(circle at 28% 30%, rgba(164,196,92,0.9), transparent 55%),

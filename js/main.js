@@ -340,44 +340,10 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-/* --- Navbar + scroll progress ---------------------------- */
+/* --- Navbar scroll --------------------------------------- */
 const nav = $('#nav');
-const scrollProgress = $('#scrollProgress');
-let lastScrollY = 0;
-let scrollTicking = false;
-
-function onScrollFrame() {
-  const y = window.pageYOffset;
-
-  // Progress bar
-  if (scrollProgress) {
-    const docH = document.documentElement.scrollHeight - window.innerHeight;
-    const pct = docH > 0 ? (y / docH) * 100 : 0;
-    scrollProgress.style.width = `${Math.min(Math.max(pct, 0), 100)}%`;
-  }
-
-  // Solid nav bg after initial scroll
-  nav.classList.toggle('scrolled', y > 60);
-
-  // Auto-hide on scroll down, reveal on scroll up
-  const mobileOpen = nav.classList.contains('is-open-mobile');
-  if (!mobileOpen) {
-    if (y > 160 && y > lastScrollY + 4) {
-      nav.classList.add('nav--hidden');
-    } else if (y < lastScrollY - 4 || y <= 60) {
-      nav.classList.remove('nav--hidden');
-    }
-  }
-
-  lastScrollY = y;
-  scrollTicking = false;
-}
-
 window.addEventListener('scroll', () => {
-  if (!scrollTicking) {
-    requestAnimationFrame(onScrollFrame);
-    scrollTicking = true;
-  }
+  nav.classList.toggle('scrolled', window.pageYOffset > 60);
 }, { passive: true });
 
 /* --- Mobile nav ------------------------------------------ */
@@ -387,14 +353,11 @@ hamburger.addEventListener('click', () => {
   const open = mobileMenu.classList.toggle('is-open');
   hamburger.classList.toggle('is-open', open);
   hamburger.setAttribute('aria-expanded', open);
-  nav.classList.toggle('is-open-mobile', open);
-  if (open) nav.classList.remove('nav--hidden');
 });
 $$('.nav__mobile-links a').forEach(link => {
   link.addEventListener('click', () => {
     mobileMenu.classList.remove('is-open');
     hamburger.classList.remove('is-open');
-    nav.classList.remove('is-open-mobile');
   });
 });
 
@@ -452,7 +415,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, observerOpts);
 
 function observeAll() {
-  $$('.reveal, .reveal-right, .reveal-up-big, .reveal-clip').forEach(el => revealObserver.observe(el));
+  $$('.reveal, .reveal-right, .reveal-up-big').forEach(el => revealObserver.observe(el));
 }
 
 /* Heading line reveal — observe the parent heading, not children */
@@ -534,25 +497,6 @@ if (tickerTrack) {
   });
   tickerTrack.addEventListener('mouseleave', () => {
     tickerTrack.style.animationPlayState = 'running';
-  });
-}
-
-/* --- Magnetic buttons (desktop pointer only) -------------- */
-const canMagnet = window.matchMedia('(pointer: fine)').matches
-  && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-if (canMagnet) {
-  $$('.btn, .ig-follow-btn').forEach(btn => {
-    const strength = 0.28;
-    btn.addEventListener('mousemove', e => {
-      const r = btn.getBoundingClientRect();
-      const x = (e.clientX - r.left - r.width / 2) * strength;
-      const y = (e.clientY - r.top - r.height / 2) * strength;
-      btn.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`;
-    });
-    btn.addEventListener('mouseleave', () => {
-      btn.style.transform = '';
-    });
   });
 }
 

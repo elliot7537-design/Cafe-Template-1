@@ -260,6 +260,26 @@
         <div class="pastries__img-circle reveal-right" style="--delay:0.2s">
           <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80" alt="Conchas" loading="lazy">
         </div>
+        <div class="pastries__stamp reveal-right" style="--delay:0.35s">
+          <svg viewBox="0 0 120 120" class="pastries__stamp-svg">
+            <defs>
+              <path id="stamp-path" d="M 60,14 A 46,46 0 1,1 59.99,14.001"/>
+            </defs>
+            <circle cx="60" cy="60" r="53" fill="none" stroke="rgba(244,239,228,0.15)" stroke-width="1" stroke-dasharray="3 4"/>
+            <circle cx="60" cy="60" r="30" fill="rgba(26,13,8,0.55)" stroke="rgba(244,239,228,0.3)" stroke-width="1"/>
+            <text font-size="8.5" font-family="Inter, sans-serif" font-weight="600" fill="rgba(244,239,228,0.82)" letter-spacing="3.2">
+              <textPath href="#stamp-path">HORNEADO FRESCO · CADA MAÑANA · </textPath>
+            </text>
+            <text x="60" y="56" text-anchor="middle" font-family="'Playfair Display', serif" font-size="9" font-weight="700" fill="rgba(244,239,228,0.95)" letter-spacing="1.5">CAFÉ</text>
+            <text x="60" y="69" text-anchor="middle" font-family="'Playfair Display', serif" font-size="9" font-weight="700" fill="rgba(244,239,228,0.95)" letter-spacing="1.5">MADERA</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="pastries__strip" aria-hidden="true">
+      <div class="pastries__strip-track">
+        <span>HORNEADO HOY &nbsp;&middot;&nbsp; </span><span>HECHO CON AMOR &nbsp;&middot;&nbsp; </span><span>OAXACA, MÉXICO &nbsp;&middot;&nbsp; </span><span>PAN DULCE &nbsp;&middot;&nbsp; </span><span>TRADICIÓN FAMILIAR &nbsp;&middot;&nbsp; </span><span>EST. 2015 &nbsp;&middot;&nbsp; </span>
+        <span>HORNEADO HOY &nbsp;&middot;&nbsp; </span><span>HECHO CON AMOR &nbsp;&middot;&nbsp; </span><span>OAXACA, MÉXICO &nbsp;&middot;&nbsp; </span><span>PAN DULCE &nbsp;&middot;&nbsp; </span><span>TRADICIÓN FAMILIAR &nbsp;&middot;&nbsp; </span><span>EST. 2015 &nbsp;&middot;&nbsp; </span>
       </div>
     </div>
   </section>
@@ -284,52 +304,153 @@
     </div>
   </section>
 
-  <!-- Testimonials -->
+  <!-- Social Reviews — Instagram Posts -->
   <section class="testimonials" id="testimonials">
     <div class="testimonials__inner">
       <div class="testimonials__header">
-        <h2>
-          <span class="reveal-line"><span data-i18n="testimonials.line1">Lo Que Dicen</span></span>
-          <span class="reveal-line"><em data-i18n="testimonials.line2">Nuestros Clientes</em></span>
+        <h2 class="testimonials__heading">
+          <span class="reveal-line"><span data-i18n="testimonials.line1">En Instagram</span></span>
+          <span class="reveal-line"><em data-i18n="testimonials.line2">Nos Quieren</em></span>
         </h2>
+        <p class="testimonials__sub reveal" data-i18n="testimonials.sub">Fotos reales de nuestra comunidad</p>
       </div>
+
       <div class="testimonials__grid">
-        <div class="testimonial reveal" style="--delay:0.1s">
-          <p class="testimonial__quote" data-i18n="t1.quote">"Vine por un café, me quedé por toda una semana de café. Sin mentiras, el mejor espresso de Oaxaca."</p>
-          <div class="testimonial__author">
-            <div class="testimonial__avatar">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Ana García" loading="lazy">
+
+        <!-- IG Post 1 -->
+        <div class="ig-post reveal" style="--delay:0.1s">
+          <div class="ig-post__header">
+            <div class="ig-post__avatar">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="anagarcia.mx" loading="lazy">
             </div>
-            <div class="testimonial__info">
-              <strong data-i18n="t1.name">Ana García</strong>
-              <span data-i18n="t1.location">Ciudad de México</span>
+            <div class="ig-post__meta">
+              <span class="ig-post__handle">anagarcia.mx</span>
+              <span class="ig-post__location" data-i18n="ig.tagged">Café Madera, Oaxaca</span>
             </div>
+            <button class="ig-post__more" aria-label="More options"><span></span><span></span><span></span></button>
+          </div>
+          <div class="ig-post__img-wrap">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" alt="Coffee post" loading="lazy">
+          </div>
+          <div class="ig-post__actions">
+            <div class="ig-post__actions-left">
+              <button class="ig-action ig-action--heart" aria-label="Like">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+              <button class="ig-action" aria-label="Comment">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </button>
+              <button class="ig-action" aria-label="Share">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </div>
+            <button class="ig-action" aria-label="Save">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+          </div>
+          <div class="ig-post__body">
+            <p class="ig-post__likes"><strong>2,847 <span data-i18n="ig.likes">Me gusta</span></strong></p>
+            <p class="ig-post__caption">
+              <strong>anagarcia.mx</strong>
+              <span data-i18n="t1.caption"> Vine por un café, me quedé por toda una semana ☕🫶 No hay nada igual en Oaxaca. El espresso aquí es vida. Sin mentiras.</span>
+              <span class="ig-post__tags">#CaféMadera #OaxacaCoffee #CafeMexicano #BestEspresso</span>
+            </p>
+            <p class="ig-post__time" data-i18n="t1.time">hace 2 días</p>
           </div>
         </div>
-        <div class="testimonial reveal" style="--delay:0.2s">
-          <p class="testimonial__quote" data-i18n="t2.quote">"El matcha con canela es una experiencia. No hay nada igual. Ya es mi lugar de trabajo remoto favorito."</p>
-          <div class="testimonial__author">
-            <div class="testimonial__avatar">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Carlos Mendoza" loading="lazy">
+
+        <!-- IG Post 2 -->
+        <div class="ig-post reveal" style="--delay:0.2s">
+          <div class="ig-post__header">
+            <div class="ig-post__avatar">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="carlitos.mendo" loading="lazy">
             </div>
-            <div class="testimonial__info">
-              <strong data-i18n="t2.name">Carlos Mendoza</strong>
-              <span data-i18n="t2.location">Guadalajara</span>
+            <div class="ig-post__meta">
+              <span class="ig-post__handle">carlitos.mendo</span>
+              <span class="ig-post__location" data-i18n="ig.tagged">Café Madera, Oaxaca</span>
             </div>
+            <button class="ig-post__more" aria-label="More options"><span></span><span></span><span></span></button>
+          </div>
+          <div class="ig-post__img-wrap">
+            <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80" alt="Matcha post" loading="lazy">
+          </div>
+          <div class="ig-post__actions">
+            <div class="ig-post__actions-left">
+              <button class="ig-action ig-action--heart" aria-label="Like">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+              <button class="ig-action" aria-label="Comment">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </button>
+              <button class="ig-action" aria-label="Share">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </div>
+            <button class="ig-action" aria-label="Save">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+          </div>
+          <div class="ig-post__body">
+            <p class="ig-post__likes"><strong>1,203 <span data-i18n="ig.likes">Me gusta</span></strong></p>
+            <p class="ig-post__caption">
+              <strong>carlitos.mendo</strong>
+              <span data-i18n="t2.caption"> El matcha con canela 🍵✨ No hay nada igual en el mundo. Ya es mi oficina favorita. Vengo todos los días.</span>
+              <span class="ig-post__tags">#MatchaMadera #CaféMadera #RemoteWork #OaxacaVibes</span>
+            </p>
+            <p class="ig-post__time" data-i18n="t2.time">hace 5 días</p>
           </div>
         </div>
-        <div class="testimonial reveal" style="--delay:0.3s">
-          <p class="testimonial__quote" data-i18n="t3.quote">"Los chilaquiles y un café de olla por la mañana. Perfecta combinación. Regresaré pronto."</p>
-          <div class="testimonial__author">
-            <div class="testimonial__avatar">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80" alt="Sofía Ramírez" loading="lazy">
+
+        <!-- IG Post 3 -->
+        <div class="ig-post reveal" style="--delay:0.3s">
+          <div class="ig-post__header">
+            <div class="ig-post__avatar">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80" alt="sofiaxoaxaca" loading="lazy">
             </div>
-            <div class="testimonial__info">
-              <strong data-i18n="t3.name">Sofía Ramírez</strong>
-              <span data-i18n="t3.location">Oaxaca</span>
+            <div class="ig-post__meta">
+              <span class="ig-post__handle">sofiaxoaxaca</span>
+              <span class="ig-post__location" data-i18n="ig.tagged">Café Madera, Oaxaca</span>
             </div>
+            <button class="ig-post__more" aria-label="More options"><span></span><span></span><span></span></button>
+          </div>
+          <div class="ig-post__img-wrap">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=600&q=80" alt="Breakfast post" loading="lazy">
+          </div>
+          <div class="ig-post__actions">
+            <div class="ig-post__actions-left">
+              <button class="ig-action ig-action--heart" aria-label="Like">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+              <button class="ig-action" aria-label="Comment">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </button>
+              <button class="ig-action" aria-label="Share">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </div>
+            <button class="ig-action" aria-label="Save">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+          </div>
+          <div class="ig-post__body">
+            <p class="ig-post__likes"><strong>3,412 <span data-i18n="ig.likes">Me gusta</span></strong></p>
+            <p class="ig-post__caption">
+              <strong>sofiaxoaxaca</strong>
+              <span data-i18n="t3.caption"> Chilaquiles + café de olla = el desayuno perfecto 🌮☕ Regresaré este fin de semana sin duda. Oaxaca tiene el mejor café.</span>
+              <span class="ig-post__tags">#Chilaquiles #CaféMadera #DesayunoMexicano #OaxacaFood</span>
+            </p>
+            <p class="ig-post__time" data-i18n="t3.time">hace 1 semana</p>
           </div>
         </div>
+
+      </div>
+
+      <div class="testimonials__ig-follow reveal">
+        <a href="#" class="ig-follow-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <span data-i18n="ig.follow">Síguenos en Instagram</span>
+          <span class="ig-follow-btn__handle">@cafemadera</span>
+        </a>
       </div>
     </div>
   </section>

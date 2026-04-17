@@ -244,6 +244,7 @@ sup { font-size: 0.5em; vertical-align: super; }
 .hero__bg {
   position: absolute;
   inset: -10% 0;
+  background-color: #1a0d08;
   background-size: cover;
   background-position: center;
   will-change: transform;

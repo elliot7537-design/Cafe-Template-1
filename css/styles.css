@@ -953,6 +953,9 @@ sup { font-size: 0.5em; vertical-align: super; }
   position: absolute;
   inset: 0;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background:
     linear-gradient(135deg, var(--warm-brown), var(--dark-mid));
 }
@@ -963,6 +966,54 @@ sup { font-size: 0.5em; vertical-align: super; }
   transition: transform 0.8s var(--ease-out);
 }
 .dish-card:hover .dish-card__img img { transform: scale(1.08); }
+
+/* Illustrated per-dish art: emoji centered on a tuned gradient */
+.dish-card__icon {
+  font-size: 108px;
+  line-height: 1;
+  display: block;
+  filter: drop-shadow(0 10px 24px rgba(0,0,0,0.35));
+  transform: translateY(-4px);
+  transition: transform 0.5s var(--ease-out);
+}
+.dish-card--hero .dish-card__icon {
+  font-size: clamp(140px, 20vw, 220px);
+}
+.dish-card:hover .dish-card__icon {
+  transform: translateY(-4px) scale(1.06) rotate(-3deg);
+}
+
+/* Per-dish colour backgrounds — each evokes the dish's real tones */
+.dish-card__img--chilaquiles {
+  background:
+    radial-gradient(circle at 28% 30%, rgba(164,196,92,0.9), transparent 55%),
+    radial-gradient(circle at 75% 75%, rgba(212,90,62,0.55), transparent 60%),
+    linear-gradient(135deg, #3f5428 0%, #2a1a12 100%);
+}
+.dish-card__img--huevos {
+  background:
+    radial-gradient(circle at 30% 35%, rgba(232,152,56,0.92), transparent 58%),
+    radial-gradient(circle at 75% 70%, rgba(201,68,48,0.85), transparent 60%),
+    linear-gradient(135deg, #5d2718 0%, #2b0e08 100%);
+}
+.dish-card__img--mole {
+  background:
+    radial-gradient(circle at 25% 25%, rgba(158,86,44,0.85), transparent 55%),
+    radial-gradient(circle at 78% 72%, rgba(96,32,22,0.9), transparent 60%),
+    linear-gradient(135deg, #4a2413 0%, #1c0b06 100%);
+}
+.dish-card__img--tamales {
+  background:
+    radial-gradient(circle at 30% 30%, rgba(112,148,72,0.75), transparent 55%),
+    radial-gradient(circle at 75% 72%, rgba(224,208,150,0.4), transparent 60%),
+    linear-gradient(135deg, #3b4726 0%, #241b10 100%);
+}
+.dish-card__img--avocado {
+  background:
+    radial-gradient(circle at 30% 30%, rgba(156,194,110,0.85), transparent 55%),
+    radial-gradient(circle at 75% 75%, rgba(80,46,22,0.7), transparent 60%),
+    linear-gradient(135deg, #3d5426 0%, #1f2413 100%);
+}
 
 .dish-card__gradient {
   position: absolute;

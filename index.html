@@ -510,23 +510,86 @@
     </div>
   </section>
 
-  <!-- Products Bold Section -->
+  <!-- Products / Beans Shop Section -->
   <section class="products" id="products">
     <div class="products__bg" style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1920&q=80')"></div>
     <div class="products__overlay"></div>
     <div class="products__content">
-      <p class="section-label section-label--light reveal" data-i18n="products.label">ROASTERY BEAN PRODUCTS</p>
-      <div class="products__big-text" aria-hidden="true">
-        <span class="reveal-up-big" style="--delay:0.0s" data-i18n="products.bigWord1">NUESTROS</span>
-        <span class="reveal-up-big" style="--delay:0.1s" data-i18n="products.bigWord2">BEANS</span>
-        <span class="reveal-up-big" style="--delay:0.2s" data-i18n="products.bigWord3">&amp; PRODUCTOS</span>
+      <div class="products__head">
+        <p class="section-label section-label--light reveal" data-i18n="products.label">GRANOS DE OAXACA · TOSTADOS LOS LUNES</p>
+        <h2 class="products__heading">
+          <span class="reveal-line"><span data-i18n="products.line1">Tres Granos.</span></span>
+          <span class="reveal-line"><em data-i18n="products.line2">Un Alma.</em></span>
+        </h2>
+        <p class="products__body reveal" data-i18n="products.body">Cosechados en fincas oaxaqueñas, tostados cada lunes por manos que conocen el grano. Elige tu perfil y llévalo a casa.</p>
       </div>
-      <div class="products__pills reveal" style="--delay:0.3s">
-        <div class="product-pill" data-i18n="products.heavy">Intenso &amp;<br>Amargo</div>
-        <div class="product-pill" data-i18n="products.smooth">Smooth<br>Criminal</div>
-        <div class="product-pill" data-i18n="products.soft">Suave &amp;<br>Aromático</div>
+
+      <div class="products__grid">
+
+        <article class="bean-card reveal" style="--delay:0.1s">
+          <div class="bean-card__num">01</div>
+          <div class="bean-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=800&q=80" alt="Intenso y Amargo" loading="lazy">
+            <span class="bean-card__roast bean-card__roast--dark" data-i18n="bean.dark">TUESTE OSCURO</span>
+          </div>
+          <div class="bean-card__body">
+            <h3 data-i18n="products.heavy">Intenso &amp; Amargo</h3>
+            <p class="bean-card__notes" data-i18n="bean.notes1">Chocolate · Cacao · Especias</p>
+            <div class="bean-card__foot">
+              <span class="bean-card__price">$280 <em data-i18n="bean.weight">/ 340g</em></span>
+              <a href="#" class="bean-card__btn" aria-label="Add to cart">
+                <span data-i18n="bean.add">Añadir</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="bean-card bean-card--featured reveal" style="--delay:0.2s">
+          <span class="bean-card__ribbon" data-i18n="bean.popular">MÁS VENDIDO</span>
+          <div class="bean-card__num">02</div>
+          <div class="bean-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1559525839-d9acfd55cf41?auto=format&fit=crop&w=800&q=80" alt="Smooth Criminal" loading="lazy">
+            <span class="bean-card__roast bean-card__roast--medium" data-i18n="bean.medium">TUESTE MEDIO</span>
+          </div>
+          <div class="bean-card__body">
+            <h3 data-i18n="products.smooth">Smooth Criminal</h3>
+            <p class="bean-card__notes" data-i18n="bean.notes2">Caramelo · Avellana · Miel</p>
+            <div class="bean-card__foot">
+              <span class="bean-card__price">$320 <em data-i18n="bean.weight">/ 340g</em></span>
+              <a href="#" class="bean-card__btn" aria-label="Add to cart">
+                <span data-i18n="bean.add">Añadir</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="bean-card reveal" style="--delay:0.3s">
+          <div class="bean-card__num">03</div>
+          <div class="bean-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=800&q=80" alt="Suave y Aromático" loading="lazy">
+            <span class="bean-card__roast bean-card__roast--light" data-i18n="bean.light">TUESTE CLARO</span>
+          </div>
+          <div class="bean-card__body">
+            <h3 data-i18n="products.soft">Suave &amp; Aromático</h3>
+            <p class="bean-card__notes" data-i18n="bean.notes3">Frutal · Cítrico · Floral</p>
+            <div class="bean-card__foot">
+              <span class="bean-card__price">$300 <em data-i18n="bean.weight">/ 340g</em></span>
+              <a href="#" class="bean-card__btn" aria-label="Add to cart">
+                <span data-i18n="bean.add">Añadir</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
       </div>
-      <a href="#" class="btn btn--white reveal" style="--delay:0.4s" data-i18n="products.cta">Comprar Granos</a>
+
+      <div class="products__foot reveal">
+        <a href="#" class="btn btn--white" data-i18n="products.cta">Ver Toda La Tienda</a>
+        <span class="products__note" data-i18n="products.note">Envío gratis en pedidos mayores a $500 MXN</span>
+      </div>
     </div>
   </section>
 

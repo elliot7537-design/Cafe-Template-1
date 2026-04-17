@@ -129,10 +129,13 @@ sup { font-size: 0.5em; vertical-align: super; }
 .nav__logo:hover { opacity: 0.8; }
 
 .lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   border: 1px solid rgba(255,255,255,0.4);
   color: #fff;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.12em;
   padding: 5px 12px;
   border-radius: 100px;
@@ -141,6 +144,18 @@ sup { font-size: 0.5em; vertical-align: super; }
 .lang-toggle:hover {
   background: rgba(255,255,255,0.1);
   border-color: rgba(255,255,255,0.7);
+}
+.lang-toggle__opt {
+  color: rgba(255,255,255,0.4);
+  transition: color 0.2s ease;
+}
+.lang-toggle[data-lang="es"] .lang-toggle__opt[data-opt="es"],
+.lang-toggle[data-lang="en"] .lang-toggle__opt[data-opt="en"] {
+  color: #fff;
+}
+.lang-toggle__sep {
+  color: rgba(255,255,255,0.35);
+  font-weight: 400;
 }
 
 .nav__hamburger {
@@ -795,6 +810,234 @@ sup { font-size: 0.5em; vertical-align: super; }
   font-weight: 600;
 }
 
+/* --- Dishes / Cocina Section ----------------------------- */
+.dishes {
+  position: relative;
+  background: var(--cream);
+  padding: 130px 0 140px;
+  overflow: hidden;
+}
+.dishes::before {
+  content: "";
+  position: absolute;
+  top: -80px; right: -60px;
+  width: 360px; height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(193,53,32,0.08), transparent 70%);
+  pointer-events: none;
+}
+.dishes::after {
+  content: "";
+  position: absolute;
+  bottom: -120px; left: -80px;
+  width: 420px; height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(122,106,90,0.12), transparent 70%);
+  pointer-events: none;
+}
+.dishes__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.dishes__header {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 56px;
+}
+.dishes__header .section-label {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+.dishes__heading {
+  font-family: var(--font-serif);
+  font-size: clamp(44px, 6.5vw, 86px);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--dark);
+  letter-spacing: -0.015em;
+  margin-bottom: 20px;
+}
+.dishes__heading em {
+  font-style: italic;
+  font-weight: 700;
+  color: var(--red);
+}
+.dishes__body {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--warm-brown);
+  max-width: 560px;
+  margin: 0 auto 28px;
+}
+.dishes__stats {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 28px;
+  padding: 12px 24px;
+  background: #fff;
+  border-radius: 100px;
+  border: 1px solid rgba(26,13,8,0.08);
+  box-shadow: 0 4px 18px rgba(26,13,8,0.06);
+}
+.dishes__stat {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  color: var(--warm-brown);
+}
+.dishes__stat strong {
+  font-family: var(--font-serif);
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--red);
+  margin-right: 5px;
+}
+.dishes__stat em {
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Bento grid — hero dish spans 2 rows on the left, 2×2 grid on the right */
+.dishes__bento {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 20px;
+}
+.dish-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--dark-mid);
+  box-shadow: 0 10px 32px rgba(26,13,8,0.12);
+  transition: transform 0.5s var(--ease-out), box-shadow 0.5s var(--ease-out);
+  cursor: pointer;
+}
+.dish-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 54px rgba(26,13,8,0.25);
+}
+.dish-card--hero {
+  grid-row: span 2;
+  grid-column: 1;
+}
+
+.dish-card__img {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, var(--warm-brown), var(--dark-mid));
+}
+.dish-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-out);
+}
+.dish-card:hover .dish-card__img img { transform: scale(1.08); }
+
+.dish-card__gradient {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(20,8,3,0) 30%, rgba(20,8,3,0.55) 65%, rgba(20,8,3,0.92) 100%);
+}
+
+.dish-card__content {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 20px 22px 22px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.dish-card--hero .dish-card__content {
+  padding: 28px 30px 30px;
+  gap: 10px;
+}
+
+.dish-card__tag {
+  align-self: flex-start;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  padding: 5px 11px;
+  border-radius: 100px;
+  background: var(--red);
+  color: #fff;
+  margin-bottom: 4px;
+  box-shadow: 0 4px 14px rgba(193,53,32,0.4);
+}
+.dish-card__tag--new { background: #fff; color: var(--dark); }
+
+.dish-card__content h3 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+.dish-card--hero .dish-card__content h3 {
+  font-size: 36px;
+  font-weight: 900;
+}
+.dish-card__content p {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 300;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.82);
+  max-width: 360px;
+}
+.dish-card--hero .dish-card__content p {
+  font-size: 15px;
+  max-width: 420px;
+}
+
+.dish-card__foot {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.dish-card__price {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 5px 12px;
+  border-radius: 100px;
+  backdrop-filter: blur(6px);
+}
+.dish-card--hero .dish-card__price {
+  font-size: 22px;
+  padding: 7px 16px;
+}
+.dish-card__meta {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.02em;
+}
+
+.dishes__cta {
+  margin-top: 48px;
+  text-align: center;
+}
+
 /* --- Pastries Section ------------------------------------ */
 .pastries {
   background: var(--dark-mid);
@@ -1046,7 +1289,18 @@ sup { font-size: 0.5em; vertical-align: super; }
   width: 100%;
   height: 240px;
   overflow: hidden;
-  background: var(--cream-alt);
+  background:
+    linear-gradient(135deg, var(--warm-brown) 0%, var(--dark-mid) 100%);
+}
+.bean-card--featured .bean-card__img-wrap {
+  background:
+    linear-gradient(135deg, var(--dark-mid) 0%, var(--dark) 100%);
+}
+.bean-card__img-wrap img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 .bean-card__img-wrap img {
   transition: transform 0.7s var(--ease-out);
@@ -1800,6 +2054,11 @@ sup { font-size: 0.5em; vertical-align: super; }
   .products__grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
   .bean-card--featured { transform: none; }
   .bean-card--featured:hover { transform: translateY(-8px); }
+  .dishes__bento {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 340px 240px 240px;
+  }
+  .dish-card--hero { grid-column: 1 / -1; grid-row: 1; }
   .footer__top { grid-template-columns: repeat(2, 1fr); }
   .pastries__stamp { width: 100px; height: 100px; }
   .testimonials__deco-heart { font-size: 160px; }
@@ -1817,7 +2076,13 @@ sup { font-size: 0.5em; vertical-align: super; }
   .about__inner { padding: 0 24px; }
   .about__stats { flex-direction: column; gap: 28px; }
   .menu__inner, .pastries__inner, .products__content,
-  .testimonials__inner, .footer__top, .footer__bottom { padding-left: 24px; padding-right: 24px; }
+  .testimonials__inner, .dishes__inner, .footer__top, .footer__bottom { padding-left: 24px; padding-right: 24px; }
+  .dishes__bento {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px repeat(4, 220px);
+  }
+  .dish-card--hero { grid-column: 1; grid-row: 1; }
+  .dish-card--hero .dish-card__content h3 { font-size: 28px; }
   .menu__grid { grid-template-columns: 1fr; }
   .menu-card__img-wrap { height: 280px; }
   .testimonials__grid { grid-template-columns: 1fr; gap: 32px; }
@@ -1836,5 +2101,5 @@ sup { font-size: 0.5em; vertical-align: super; }
   .hero__headline { font-size: clamp(48px, 14vw, 80px); }
   .hero__ctas { flex-direction: column; }
   .btn { width: 100%; text-align: center; }
-  .about, .menu, .pastries, .products, .testimonials { padding: 80px 0; }
+  .about, .menu, .pastries, .products, .testimonials, .dishes { padding: 80px 0; }
 }

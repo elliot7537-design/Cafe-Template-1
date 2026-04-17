@@ -65,6 +65,28 @@ const translations = {
     "items.enchiladas":  "Enchiladas de Desayuno",
     "items.tamales":     "Tamales",
 
+    "dishes.label":      "COCINA OAXAQUEÑA · HECHA HOY",
+    "dishes.line1":      "Platillos",
+    "dishes.line2":      "de la Casa.",
+    "dishes.body":       "Recetas de la abuela, ingredientes del mercado. Cada plato sale de la cocina con chile, maíz, y memoria oaxaqueña.",
+    "dishes.stat1":      "platillos",
+    "dishes.stat2":      "desde las mañanas",
+    "dishes.stat3":      "ingredientes locales",
+    "dishes.tag1":       "EL FAVORITO",
+    "dishes.tag2":       "NUEVO",
+    "dishes.dish1":      "Chilaquiles Verdes",
+    "dishes.desc1":      "Totopos crujientes, salsa verde de la casa, crema fresca, queso oaxaca y huevo estrellado.",
+    "dishes.spicy1":     "🌶 Picor medio",
+    "dishes.dish2":      "Huevos Rancheros",
+    "dishes.desc2":      "Tortilla, frijoles refritos, salsa roja tatemada.",
+    "dishes.dish3":      "Enchiladas de Mole",
+    "dishes.desc3":      "Mole negro oaxaqueño de 28 ingredientes.",
+    "dishes.dish4":      "Tamales Oaxaqueños",
+    "dishes.desc4":      "Hoja de plátano, masa de maíz, mole.",
+    "dishes.dish5":      "Avocado Toast",
+    "dishes.desc5":      "Pan artesanal, aguacate, rábano, limón.",
+    "dishes.cta":        "Ver Menú Completo",
+
     "pastries.label":    "PAN DULCE & PASTELES",
     "pastries.title1":   "Hecho con",
     "pastries.title2":   "Amor y Harina",
@@ -188,6 +210,28 @@ const translations = {
     "items.avocado":     "Avocado Toast",
     "items.enchiladas":  "Breakfast Enchiladas",
     "items.tamales":     "Tamales",
+
+    "dishes.label":      "OAXACAN KITCHEN · MADE TODAY",
+    "dishes.line1":      "Signature",
+    "dishes.line2":      "Plates.",
+    "dishes.body":       "Grandma's recipes, market-fresh ingredients. Every plate leaves the kitchen with chile, corn, and Oaxacan memory.",
+    "dishes.stat1":      "dishes",
+    "dishes.stat2":      "from the morning",
+    "dishes.stat3":      "local ingredients",
+    "dishes.tag1":       "THE FAVORITE",
+    "dishes.tag2":       "NEW",
+    "dishes.dish1":      "Chilaquiles Verdes",
+    "dishes.desc1":      "Crispy tortilla chips, house salsa verde, crema fresca, Oaxaca cheese and a sunny egg on top.",
+    "dishes.spicy1":     "🌶 Medium heat",
+    "dishes.dish2":      "Huevos Rancheros",
+    "dishes.desc2":      "Tortilla, refried beans, fire-charred red salsa.",
+    "dishes.dish3":      "Mole Enchiladas",
+    "dishes.desc3":      "Oaxacan black mole with 28 ingredients.",
+    "dishes.dish4":      "Oaxacan Tamales",
+    "dishes.desc4":      "Banana leaf, corn masa, mole.",
+    "dishes.dish5":      "Avocado Toast",
+    "dishes.desc5":      "Sourdough, avocado, radish, lime.",
+    "dishes.cta":        "See Full Menu",
 
     "pastries.label":    "PAN DULCE & PASTRIES",
     "pastries.title1":   "Made with",
@@ -334,8 +378,7 @@ function applyTranslations(lang) {
     if (t[key]) el.placeholder = t[key];
   });
 
-  const toggleLabel = lang === 'es' ? 'EN' : 'ES';
-  $$('.lang-toggle__text').forEach(el => el.textContent = toggleLabel);
+  $$('.lang-toggle').forEach(el => el.dataset.lang = lang);
 }
 
 function switchLanguage() {

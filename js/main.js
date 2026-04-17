@@ -41,7 +41,7 @@
   function makeSVG(cat, w, h) {
     const p = PALETTES[cat] || PALETTES.coffee;
     const svg =
-      `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid slice">
+      `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid slice">
         <defs>
           <radialGradient id="g" cx="35%" cy="30%" r="85%">
             <stop offset="0" stop-color="${p.accent}" stop-opacity=".45"/>
@@ -53,7 +53,7 @@
           ${iconPath(cat)}
         </g>
       </svg>`;
-    return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
   }
 
   function handle(img) {

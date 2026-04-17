@@ -581,6 +581,24 @@ sup { font-size: 0.5em; vertical-align: super; }
   height: 100%;
   border-radius: 4px;
   overflow: hidden;
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(224,208,187,0.4), transparent 60%),
+    linear-gradient(135deg, #4a2f1f 0%, #2c1a0e 100%);
+}
+.about__image-main img,
+.about__image-circle img,
+.pastries__img-main img,
+.pastries__img-circle img,
+.menu-card__img-wrap img,
+.dish-card__img img,
+.bean-card__img-wrap img,
+.ig-post__img-wrap img,
+.ig-post__avatar img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .about__image-circle {
   position: absolute;
@@ -591,6 +609,8 @@ sup { font-size: 0.5em; vertical-align: super; }
   border-radius: 50%;
   overflow: hidden;
   border: 6px solid var(--cream);
+  background:
+    radial-gradient(circle at 35% 30%, rgba(240,200,150,0.5), #3a1f10 70%);
   box-shadow: 0 16px 48px rgba(0,0,0,0.15);
 }
 
@@ -1203,6 +1223,9 @@ sup { font-size: 0.5em; vertical-align: super; }
   height: 90%;
   border-radius: 6px;
   overflow: hidden;
+  background:
+    radial-gradient(ellipse at 35% 25%, rgba(240,200,150,0.45), transparent 60%),
+    linear-gradient(135deg, #6b3f25 0%, #3a1f10 100%);
 }
 .pastries__img-circle {
   position: absolute;
@@ -1213,6 +1236,8 @@ sup { font-size: 0.5em; vertical-align: super; }
   overflow: hidden;
   border: 6px solid var(--dark-mid);
   box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+  background:
+    radial-gradient(circle at 35% 30%, rgba(232,168,92,0.55), #3a1f10 70%);
 }
 
 /* --- Products / Beans Shop Section ----------------------- */

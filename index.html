@@ -34,8 +34,10 @@
         <a href="#" data-i18n="nav.empleo">Empleo</a>
         <a href="#contact" data-i18n="nav.contacto">Contacto</a>
         <a href="#contact" class="nav__location" data-i18n="nav.location">Oaxaca, México</a>
-        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
-          <span class="lang-toggle__text">EN</span>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language" data-lang="es">
+          <span class="lang-toggle__opt" data-opt="es">ES</span>
+          <span class="lang-toggle__sep" aria-hidden="true">/</span>
+          <span class="lang-toggle__opt" data-opt="en">EN</span>
         </button>
       </div>
       <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
@@ -52,8 +54,10 @@
         <a href="#testimonials" data-i18n="nav.testimonios">Testimonios</a>
         <a href="#" data-i18n="nav.empleo">Empleo</a>
         <a href="#contact" data-i18n="nav.contacto">Contacto</a>
-        <button class="lang-toggle lang-toggle--mobile" id="langToggleMobile">
-          <span class="lang-toggle__text">EN</span>
+        <button class="lang-toggle lang-toggle--mobile" id="langToggleMobile" aria-label="Toggle language" data-lang="es">
+          <span class="lang-toggle__opt" data-opt="es">ES</span>
+          <span class="lang-toggle__sep" aria-hidden="true">/</span>
+          <span class="lang-toggle__opt" data-opt="en">EN</span>
         </button>
       </div>
     </div>
@@ -449,6 +453,107 @@
     </div>
   </section>
 
+  <!-- Cocina / Signature Dishes Section -->
+  <section class="dishes" id="dishes">
+    <div class="dishes__inner">
+      <div class="dishes__header">
+        <span class="section-label reveal" data-i18n="dishes.label">COCINA OAXAQUEÑA · HECHA HOY</span>
+        <h2 class="dishes__heading">
+          <span class="reveal-line"><span data-i18n="dishes.line1">Platillos</span></span>
+          <span class="reveal-line"><em data-i18n="dishes.line2">de la Casa.</em></span>
+        </h2>
+        <p class="dishes__body reveal" data-i18n="dishes.body">Recetas de la abuela, ingredientes del mercado. Cada plato sale de la cocina con chile, maíz, y memoria oaxaqueña.</p>
+        <div class="dishes__stats reveal">
+          <span class="dishes__stat"><strong>15+</strong> <em data-i18n="dishes.stat1">platillos</em></span>
+          <span class="dishes__stat"><strong>7:00</strong> <em data-i18n="dishes.stat2">desde las mañanas</em></span>
+          <span class="dishes__stat"><strong>100%</strong> <em data-i18n="dishes.stat3">ingredientes locales</em></span>
+        </div>
+      </div>
+
+      <div class="dishes__bento">
+
+        <!-- HERO dish: spans full height -->
+        <article class="dish-card dish-card--hero reveal" style="--delay:0.1s">
+          <div class="dish-card__img">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1200&q=80" alt="Chilaquiles" loading="lazy">
+          </div>
+          <div class="dish-card__gradient"></div>
+          <div class="dish-card__content">
+            <span class="dish-card__tag" data-i18n="dishes.tag1">EL FAVORITO</span>
+            <h3 data-i18n="dishes.dish1">Chilaquiles Verdes</h3>
+            <p data-i18n="dishes.desc1">Totopos crujientes, salsa verde de la casa, crema fresca, queso oaxaca y huevo estrellado.</p>
+            <div class="dish-card__foot">
+              <span class="dish-card__price">$120</span>
+              <span class="dish-card__meta" data-i18n="dishes.spicy1">🌶 Picor medio</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" style="--delay:0.18s">
+          <div class="dish-card__img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Huevos Rancheros" loading="lazy">
+          </div>
+          <div class="dish-card__gradient"></div>
+          <div class="dish-card__content">
+            <h3 data-i18n="dishes.dish2">Huevos Rancheros</h3>
+            <p data-i18n="dishes.desc2">Tortilla, frijoles refritos, salsa roja tatemada.</p>
+            <div class="dish-card__foot">
+              <span class="dish-card__price">$115</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" style="--delay:0.26s">
+          <div class="dish-card__img">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80" alt="Enchiladas de Mole" loading="lazy">
+          </div>
+          <div class="dish-card__gradient"></div>
+          <div class="dish-card__content">
+            <span class="dish-card__tag dish-card__tag--new" data-i18n="dishes.tag2">NUEVO</span>
+            <h3 data-i18n="dishes.dish3">Enchiladas de Mole</h3>
+            <p data-i18n="dishes.desc3">Mole negro oaxaqueño de 28 ingredientes.</p>
+            <div class="dish-card__foot">
+              <span class="dish-card__price">$130</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" style="--delay:0.34s">
+          <div class="dish-card__img">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Tamales" loading="lazy">
+          </div>
+          <div class="dish-card__gradient"></div>
+          <div class="dish-card__content">
+            <h3 data-i18n="dishes.dish4">Tamales Oaxaqueños</h3>
+            <p data-i18n="dishes.desc4">Hoja de plátano, masa de maíz, mole.</p>
+            <div class="dish-card__foot">
+              <span class="dish-card__price">$85</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" style="--delay:0.42s">
+          <div class="dish-card__img">
+            <img src="https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=800&q=80" alt="Avocado Toast" loading="lazy">
+          </div>
+          <div class="dish-card__gradient"></div>
+          <div class="dish-card__content">
+            <h3 data-i18n="dishes.dish5">Avocado Toast</h3>
+            <p data-i18n="dishes.desc5">Pan artesanal, aguacate, rábano, limón.</p>
+            <div class="dish-card__foot">
+              <span class="dish-card__price">$95</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="dishes__cta reveal">
+        <a href="#menu" class="btn btn--primary" data-i18n="dishes.cta">Ver Menú Completo</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Pastries Section -->
   <section class="pastries" id="pastries">
     <div class="pastries__inner">
@@ -532,7 +637,7 @@
         <article class="bean-card reveal" style="--delay:0.1s">
           <div class="bean-card__num">01</div>
           <div class="bean-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=800&q=80" alt="Intenso y Amargo" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80" alt="Intenso y Amargo" loading="lazy">
             <span class="bean-card__roast bean-card__roast--dark" data-i18n="bean.dark">TUESTE OSCURO</span>
           </div>
           <div class="bean-card__body">
@@ -552,7 +657,7 @@
           <span class="bean-card__ribbon" data-i18n="bean.popular">MÁS VENDIDO</span>
           <div class="bean-card__num">02</div>
           <div class="bean-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1559525839-d9acfd55cf41?auto=format&fit=crop&w=800&q=80" alt="Smooth Criminal" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Smooth Criminal" loading="lazy">
             <span class="bean-card__roast bean-card__roast--medium" data-i18n="bean.medium">TUESTE MEDIO</span>
           </div>
           <div class="bean-card__body">
@@ -571,7 +676,7 @@
         <article class="bean-card reveal" style="--delay:0.3s">
           <div class="bean-card__num">03</div>
           <div class="bean-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=800&q=80" alt="Suave y Aromático" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Suave y Aromático" loading="lazy">
             <span class="bean-card__roast bean-card__roast--light" data-i18n="bean.light">TUESTE CLARO</span>
           </div>
           <div class="bean-card__body">

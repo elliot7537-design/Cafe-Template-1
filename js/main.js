@@ -2,6 +2,85 @@
    CAFÉ MADERA — Main JavaScript
    ============================================================ */
 
+/* --- Image fallbacks ------------------------------------- */
+(function () {
+  const PALETTES = {
+    coffee: { bg: '#2C1A0E', accent: '#C9A47A' },
+    food:   { bg: '#3A1F10', accent: '#E8A85C' },
+    beans:  { bg: '#1A0D08', accent: '#A87547' },
+    person: { bg: '#4A2F1F', accent: '#E0D0BB' },
+    pastry: { bg: '#5A3A1F', accent: '#F0C896' }
+  };
+
+  function categoryFor(img) {
+    const alt  = (img.alt || '').toLowerCase();
+    const cls  = (img.className || '').toLowerCase() + ' ' +
+                 ((img.parentElement && img.parentElement.className) || '').toLowerCase();
+    if (/avatar|anagarcia|carlitos|sofiaxoaxaca|barista|persona/.test(alt + cls)) return 'person';
+    if (/grano|bean|intenso|smooth|aromátic|aromatic/.test(alt + cls))            return 'beans';
+    if (/concha|pan dulce|pastel|pastry/.test(alt + cls))                         return 'pastry';
+    if (/chilaquile|huevo|enchilada|tamal|toast|desayun|breakfast|post/.test(alt + cls)) return 'food';
+    return 'coffee';
+  }
+
+  function iconPath(cat) {
+    switch (cat) {
+      case 'beans':
+        return '<g><ellipse cx="0" cy="-30" rx="42" ry="62" transform="rotate(-18)"/><ellipse cx="10" cy="40" rx="42" ry="62" transform="rotate(18 10 40)"/></g>';
+      case 'person':
+        return '<g><circle cx="0" cy="-30" r="42"/><path d="M-70 80 q70 -90 140 0 v40 h-140 z"/></g>';
+      case 'food':
+        return '<g><circle cx="0" cy="0" r="80" fill="none" stroke-width="10"/><circle cx="0" cy="0" r="48"/></g>';
+      case 'pastry':
+        return '<g><path d="M-70 20 q70 -100 140 0 q-10 40 -70 40 q-60 0 -70 -40 z"/><path d="M-40 0 q10 -20 30 0 M0 -10 q10 -20 30 0" fill="none" stroke-width="6"/></g>';
+      default: /* coffee cup */
+        return '<g><path d="M-60 -40 h110 v50 a50 50 0 0 1 -50 50 h-10 a50 50 0 0 1 -50 -50 z"/><path d="M50 -25 q40 10 0 45" fill="none" stroke-width="10"/><path d="M-30 -70 q0 -20 15 -15 M0 -70 q0 -20 15 -15 M30 -70 q0 -20 15 -15" fill="none" stroke-width="6"/></g>';
+    }
+  }
+
+  function makeSVG(cat, w, h) {
+    const p = PALETTES[cat] || PALETTES.coffee;
+    const svg =
+      `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="g" cx="35%" cy="30%" r="85%">
+            <stop offset="0" stop-color="${p.accent}" stop-opacity=".45"/>
+            <stop offset="1" stop-color="${p.bg}"/>
+          </radialGradient>
+        </defs>
+        <rect width="${w}" height="${h}" fill="url(#g)"/>
+        <g transform="translate(${w / 2} ${h / 2})" fill="${p.accent}" stroke="${p.accent}" opacity="0.55">
+          ${iconPath(cat)}
+        </g>
+      </svg>`;
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }
+
+  function handle(img) {
+    if (!img || img.dataset.fallback === '1') return;
+    img.dataset.fallback = '1';
+    const w = img.clientWidth  || img.naturalWidth  || 800;
+    const h = img.clientHeight || img.naturalHeight || 600;
+    img.src = makeSVG(categoryFor(img), Math.max(w, 100), Math.max(h, 100));
+  }
+
+  document.addEventListener('error', (e) => {
+    const t = e.target;
+    if (t && t.tagName === 'IMG') handle(t);
+  }, true);
+
+  function sweep() {
+    document.querySelectorAll('img').forEach((img) => {
+      if (img.complete && img.naturalWidth === 0) handle(img);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', sweep);
+  } else {
+    sweep();
+  }
+})();
+
 /* --- Translations ---------------------------------------- */
 const translations = {
   es: {

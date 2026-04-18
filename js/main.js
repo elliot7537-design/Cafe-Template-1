@@ -284,6 +284,10 @@ const translations = {
     "menuPage.empanadasDesc":"Guayaba, piña, o calabaza. Según la estación.",
     "menuPage.footerNote":   "¿Listo para probarlo?",
     "menuPage.visitUs":      "Ven a Visitarnos",
+    "menuPage.badgePopular": "POPULAR",
+    "menuPage.badgeNew":     "NUEVO",
+    "menuPage.badgeTop":     "MÁS PEDIDO",
+    "menuPage.badgeChef":    "RECOMENDADO",
 
     /* Shop subpage */
     "shopPage.label":        "GRANOS DE OAXACA · TOSTADOS LOS LUNES",
@@ -542,6 +546,10 @@ const translations = {
     "menuPage.empanadasDesc":"Guava, pineapple, or squash. Depending on the season.",
     "menuPage.footerNote":   "Ready to try it?",
     "menuPage.visitUs":      "Come Visit",
+    "menuPage.badgePopular": "POPULAR",
+    "menuPage.badgeNew":     "NEW",
+    "menuPage.badgeTop":     "BEST-SELLING",
+    "menuPage.badgeChef":    "CHEF'S PICK",
 
     /* Shop subpage */
     "shopPage.label":        "OAXACAN BEANS · ROASTED EVERY MONDAY",
@@ -749,7 +757,7 @@ const headingObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
 
 function observeLines() {
-  $$('.about__headline, .pastries__headline, .testimonials__heading, .dishes__heading, .products__heading').forEach(el => {
+  $$('.about__headline, .pastries__headline, .testimonials__heading, .dishes__heading, .products__heading, .page-hero__title').forEach(el => {
     headingObserver.observe(el);
   });
 }

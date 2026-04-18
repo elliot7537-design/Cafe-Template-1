@@ -2572,3 +2572,189 @@ body.subpage { padding-top: var(--nav-h); }
   .careers-positions,
   .shop-grid { padding: 64px 0; }
 }
+
+/* ============================================================
+   MENU SUBPAGE — decorative layer on top of the base subpage CSS
+   ============================================================ */
+
+/* Hero decorations — large serif glyphs floating behind the title */
+.page-hero { position: relative; }
+.page-hero__deco {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.page-hero__glyph {
+  position: absolute;
+  font-family: var(--font-serif);
+  font-weight: 900;
+  line-height: 1;
+  user-select: none;
+}
+.page-hero__glyph--1 {
+  top: 12%;
+  left: 8%;
+  font-size: 140px;
+  color: rgba(193,53,32,0.08);
+  transform: rotate(-12deg);
+}
+.page-hero__glyph--2 {
+  top: 18%;
+  right: 10%;
+  font-size: 100px;
+  opacity: 0.18;
+  transform: rotate(15deg);
+  filter: grayscale(0.4);
+}
+.page-hero__glyph--3 {
+  bottom: 14%;
+  left: 12%;
+  font-size: 90px;
+  opacity: 0.15;
+  transform: rotate(-10deg);
+}
+.page-hero__glyph--4 {
+  bottom: 18%;
+  right: 8%;
+  font-size: 120px;
+  color: rgba(122,106,90,0.18);
+  transform: rotate(20deg);
+}
+
+/* Category section ─ positioning context for the stamp */
+.menu-section { position: relative; }
+.menu-section__inner { position: relative; }
+
+/* Category stamp — large circular emoji seal, top-right of each section */
+.menu-section__stamp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  text-align: center;
+  box-shadow: 0 10px 32px rgba(26,13,8,0.16);
+  z-index: 2;
+  transition: transform 0.4s var(--ease-out);
+}
+.menu-section__stamp span {
+  font-size: 56px;
+  line-height: 1;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.25));
+}
+.menu-section__stamp em {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.82);
+  padding: 0 10px;
+}
+.menu-section:hover .menu-section__stamp { transform: rotate(-5deg) scale(1.04); }
+
+/* Per-category gradient tints — each stamp echoes the category's palette */
+.menu-section--coffee .menu-section__stamp {
+  background:
+    radial-gradient(circle at 32% 30%, rgba(232,180,100,0.85), transparent 60%),
+    linear-gradient(135deg, #5a3320 0%, #2a150c 100%);
+}
+.menu-section--tea .menu-section__stamp {
+  background:
+    radial-gradient(circle at 32% 30%, rgba(193,53,32,0.7), transparent 60%),
+    linear-gradient(135deg, #802014 0%, #2a0b07 100%);
+}
+.menu-section--matcha .menu-section__stamp {
+  background:
+    radial-gradient(circle at 32% 30%, rgba(164,200,100,0.8), transparent 60%),
+    linear-gradient(135deg, #3f5528 0%, #1f2912 100%);
+}
+.menu-section--breakfast .menu-section__stamp {
+  background:
+    radial-gradient(circle at 32% 30%, rgba(232,152,56,0.85), transparent 60%),
+    linear-gradient(135deg, #7a3820 0%, #2a1408 100%);
+}
+.menu-section--dishes .menu-section__stamp {
+  background:
+    radial-gradient(circle at 32% 30%, rgba(158,86,44,0.9), transparent 60%),
+    linear-gradient(135deg, #4a2413 0%, #1c0b06 100%);
+}
+.menu-section--pastries .menu-section__stamp {
+  background:
+    radial-gradient(circle at 32% 30%, rgba(224,208,150,0.85), transparent 60%),
+    linear-gradient(135deg, #7a5a30 0%, #2c1f10 100%);
+}
+
+/* Bigger, punchier category head */
+.menu-section__num {
+  font-size: clamp(60px, 7vw, 96px);
+}
+.menu-section__head h2 {
+  font-size: clamp(40px, 5vw, 64px);
+}
+.menu-section__head p {
+  font-size: 16px;
+}
+.menu-section__head { padding-right: 170px; }
+
+/* Item badges — small pill next to item name */
+.menu-list__text h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.menu-list__badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  padding: 4px 9px;
+  border-radius: 100px;
+  background: var(--red);
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(193,53,32,0.32);
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.menu-list__badge--new {
+  background: var(--dark);
+  box-shadow: 0 3px 10px rgba(26,13,8,0.3);
+}
+.menu-list__badge--hot {
+  background: linear-gradient(135deg, var(--red) 0%, #f08b3a 100%);
+}
+
+/* Hover accent for each item */
+.menu-list__item {
+  transition: transform 0.25s var(--ease-out);
+}
+.menu-list__item:hover {
+  transform: translateX(4px);
+}
+.menu-list__item:hover .menu-list__text h3 { color: var(--red); }
+.menu-list__text h3 { transition: color 0.2s ease; }
+
+/* Mobile tweaks for the stamp + head */
+@media (max-width: 768px) {
+  .menu-section__stamp {
+    width: 96px;
+    height: 96px;
+    top: 48px;
+    right: 24px;
+  }
+  .menu-section__stamp span { font-size: 36px; }
+  .menu-section__stamp em { font-size: 8px; padding: 0 6px; }
+  .menu-section__head { padding-right: 110px; }
+  .page-hero__glyph { font-size: 72px !important; }
+}

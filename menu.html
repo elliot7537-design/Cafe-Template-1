@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú completo de Café Madera — café, té, matcha, desayuno oaxaqueño, pan dulce y más.">
+  <meta name="google" content="notranslate">
+  <title>Menú — Café Madera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="loading subpage">
+
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__logo">CAFÉ MADERA</div>
+      <div class="loader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <div class="nav__left">
+        <a href="shop.html" data-i18n="nav.granos">Granos</a>
+        <a href="shop.html" data-i18n="nav.tienda">Tienda</a>
+        <a href="menu.html" class="is-current" data-i18n="nav.menu">Nuestro Menú</a>
+        <a href="index.html#testimonials" data-i18n="nav.testimonios">Testimonios</a>
+      </div>
+      <a href="index.html" class="nav__logo">CAFÉ MADERA<sup>®</sup></a>
+      <div class="nav__right">
+        <a href="careers.html" data-i18n="nav.empleo">Empleo</a>
+        <a href="index.html#contact" data-i18n="nav.contacto">Contacto</a>
+        <a href="index.html#contact" class="nav__location" data-i18n="nav.location">Oaxaca, México</a>
+        <button class="lang-toggle notranslate" id="langToggle" aria-label="Toggle language" data-lang="es" translate="no">
+          <span class="lang-toggle__opt" data-opt="es">ESP</span>
+          <span class="lang-toggle__sep" aria-hidden="true">/</span>
+          <span class="lang-toggle__opt" data-opt="en">ENG</span>
+        </button>
+      </div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <div class="nav__mobile-links">
+        <a href="shop.html" data-i18n="nav.granos">Granos</a>
+        <a href="shop.html" data-i18n="nav.tienda">Tienda</a>
+        <a href="menu.html" data-i18n="nav.menu">Nuestro Menú</a>
+        <a href="index.html#testimonials" data-i18n="nav.testimonios">Testimonios</a>
+        <a href="careers.html" data-i18n="nav.empleo">Empleo</a>
+        <a href="index.html#contact" data-i18n="nav.contacto">Contacto</a>
+        <button class="lang-toggle lang-toggle--mobile notranslate" id="langToggleMobile" aria-label="Toggle language" data-lang="es" translate="no">
+          <span class="lang-toggle__opt" data-opt="es">ESP</span>
+          <span class="lang-toggle__sep" aria-hidden="true">/</span>
+          <span class="lang-toggle__opt" data-opt="en">ENG</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Subpage hero -->
+  <header class="page-hero">
+    <div class="page-hero__inner">
+      <p class="section-label reveal" data-i18n="menuPage.label">LA CARTA COMPLETA · EST. 2015</p>
+      <h1 class="page-hero__title">
+        <span class="reveal-line"><span data-i18n="menuPage.title1">Todo Lo Que</span></span>
+        <span class="reveal-line"><em data-i18n="menuPage.title2">Servimos.</em></span>
+      </h1>
+      <p class="page-hero__body reveal" data-i18n="menuPage.body">Desde el primer sorbo hasta el último. Café recién tostado, té suelto, matcha ceremonial y cocina oaxaqueña hecha todas las mañanas.</p>
+      <nav class="page-hero__anchors reveal" aria-label="Menu sections">
+        <a href="#coffee" data-i18n="menu.coffee">Café</a>
+        <a href="#tea" data-i18n="menu.tea">Té</a>
+        <a href="#matcha" data-i18n="menu.matcha">Matcha</a>
+        <a href="#breakfast" data-i18n="menu.breakfast">Desayuno</a>
+        <a href="#dishes" data-i18n="menuPage.dishes">Platillos</a>
+        <a href="#pastries" data-i18n="menuPage.pastries">Pan Dulce</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Coffee -->
+  <section class="menu-section" id="coffee">
+    <div class="menu-section__inner">
+      <div class="menu-section__head reveal">
+        <span class="menu-section__num">01</span>
+        <h2 data-i18n="menu.coffee">Café</h2>
+        <p data-i18n="menuPage.coffeeIntro">De la prensa francesa al espresso de una sola finca. Todos nuestros granos vienen de fincas oaxaqueñas.</p>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list__item reveal">
+          <div class="menu-list__text">
+            <h3 data-i18n="items.espresso">Espresso</h3>
+            <p data-i18n="menuPage.espressoDesc">Doble shot. Cuerpo denso, crema espesa, notas de chocolate amargo.</p>
+          </div>
+          <span class="menu-list__price">$45</span>
+        </li>
+        <li class="menu-list__item reveal">
+          <div class="menu-list__text">
+            <h3 data-i18n="items.americano">Americano</h3>
+            <p data-i18n="menuPage.americanoDesc">Espresso largo, agua filtrada. Limpio y directo.</p>
+          </div>
+          <span class="menu-list__price">$50</span>
+        </li>
+        <li class="menu-list__item reveal">
+          <div class="menu-list__text">
+            <h3 data-i18n="items.cafeOlla">Café de Olla</h3>
+            <p data-i18n="menuPage.cafeOllaDesc">Piloncillo, canela y granos tatemados. Servido en jarrito de barro.</p>
+          </div>
+          <span class="menu-list__price">$55</span>
+        </li>
+        <li class="menu-list__item reveal">
+          <div class="menu-list__text">
+            <h3 data-i18n="items.latte">Latte</h3>
+            <p data-i18n="menuPage.latteDesc">Espresso doble, leche vaporizada sedosa, microespuma.</p>
+          </div>
+          <span class="menu-list__price">$65</span>
+        </li>
+        <li class="menu-list__item reveal">
+          <div class="menu-list__text">
+            <h3 data-i18n="items.cappuccino">Cappuccino</h3>
+            <p data-i18n="menuPage.cappuccinoDesc">Espresso, leche y espuma seca en tercios perfectos.</p>
+          </div>
+          <span class="menu-list__price">$65</span>
+        </li>
+        <li class="menu-list__item reveal">
+          <div class="menu-list__text">
+            <h3 data-i18n="menuPage.mocha">Mocha de Oaxaca</h3>
+            <p data-i18n="menuPage.mochaDesc">Espresso con chocolate de metate, leche y un toque de canela.</p>
+          </div>
+          <span class="menu-list__price">$75</span>
+        </li>
+        <li class="menu-list__item reveal">
+          <div class="menu-list__text">
+            <h3 data-i18n="menuPage.coldBrew">Cold Brew</h3>
+            <p data-i18n="menuPage.coldBrewDesc">Extracción en frío de 18 horas. Suave, dulce, sin amargor.</p>
+          </div>
+          <span class="menu-list__price">$70</span>
+        </li>
+        <li class="menu-list__item reveal">
+          <div class="menu-list__text">
+            <h3 data-i18n="menuPage.flatWhite">Flat White</h3>
+            <p data-i18n="menuPage.flatWhiteDesc">Doble ristretto, leche microespuma densa. Café intenso.</p>
+          </div>
+          <span class="menu-list__price">$70</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Tea -->
+  <section class="menu-section menu-section--alt" id="tea">
+    <div class="menu-section__inner">
+      <div class="menu-section__head reveal">
+        <span class="menu-section__num">02</span>
+        <h2 data-i18n="menu.tea">Té</h2>
+        <p data-i18n="menuPage.teaIntro">Hojas sueltas, infusiones artesanales. Servidos en tetera de vidrio.</p>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.hibisco">Té de Hibisco</h3><p data-i18n="menuPage.hibiscoDesc">Flor de jamaica fría o caliente. Ácido, refrescante.</p></div><span class="menu-list__price">$45</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.verde">Té Verde</h3><p data-i18n="menuPage.verdeDesc">Sencha premium. Vegetal, ligeramente dulce.</p></div><span class="menu-list__price">$50</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.chai">Chai con Canela</h3><p data-i18n="menuPage.chaiDesc">Mezcla casera: cardamomo, clavo, canela, anís, leche.</p></div><span class="menu-list__price">$60</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.manzana">Té Manzana</h3><p data-i18n="menuPage.manzanaDesc">Manzana seca, canela, cáscara de naranja.</p></div><span class="menu-list__price">$50</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.menta">Té de Menta</h3><p data-i18n="menuPage.mentaDesc">Hierbabuena fresca del huerto, azúcar al gusto.</p></div><span class="menu-list__price">$45</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="menuPage.earlGrey">Earl Grey</h3><p data-i18n="menuPage.earlGreyDesc">Té negro con bergamota. Aromático y clásico.</p></div><span class="menu-list__price">$55</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Matcha -->
+  <section class="menu-section" id="matcha">
+    <div class="menu-section__inner">
+      <div class="menu-section__head reveal">
+        <span class="menu-section__num">03</span>
+        <h2 data-i18n="menu.matcha">Matcha</h2>
+        <p data-i18n="menuPage.matchaIntro">Matcha ceremonial japonés, molido en piedra. Preparado al momento.</p>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.matchaLatte">Matcha Latte</h3><p data-i18n="menuPage.matchaLatteDesc">Matcha grado ceremonial, leche entera.</p></div><span class="menu-list__price">$70</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.matchaOat">Matcha con Avena</h3><p data-i18n="menuPage.matchaOatDesc">Leche de avena, textura cremosa sin lácteos.</p></div><span class="menu-list__price">$75</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.matchaIce">Matcha Helado</h3><p data-i18n="menuPage.matchaIceDesc">Servido sobre hielo. Refrescante y vegetal.</p></div><span class="menu-list__price">$75</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.matchaCinnamon">Matcha con Canela</h3><p data-i18n="menuPage.matchaCinnamonDesc">Un toque de canela mexicana. Especiado y suave.</p></div><span class="menu-list__price">$75</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.matchaCold">Matcha Cold Brew</h3><p data-i18n="menuPage.matchaColdDesc">Matcha infusionado en frío 12 horas. Sedoso.</p></div><span class="menu-list__price">$80</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Breakfast -->
+  <section class="menu-section menu-section--alt" id="breakfast">
+    <div class="menu-section__inner">
+      <div class="menu-section__head reveal">
+        <span class="menu-section__num">04</span>
+        <h2 data-i18n="menu.breakfast">Desayuno</h2>
+        <p data-i18n="menuPage.breakfastIntro">Servido de 7am a mediodía. Huevos del día, tortillas hechas a mano.</p>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.chilaquiles">Chilaquiles</h3><p data-i18n="menuPage.chilaquilesDesc">Verdes o rojos. Con huevo o pollo. Crema y queso Oaxaca.</p></div><span class="menu-list__price">$120</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.huevos">Huevos Rancheros</h3><p data-i18n="menuPage.huevosDesc">Dos huevos estrellados sobre tortilla, salsa roja tatemada.</p></div><span class="menu-list__price">$115</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.avocado">Avocado Toast</h3><p data-i18n="menuPage.avocadoDesc">Pan de masa madre, aguacate, rábano, limón, chile piquín.</p></div><span class="menu-list__price">$95</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.enchiladas">Enchiladas de Desayuno</h3><p data-i18n="menuPage.enchiladasDesc">Tres enchiladas con huevo, salsa y frijoles de olla.</p></div><span class="menu-list__price">$130</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="items.tamales">Tamales</h3><p data-i18n="menuPage.tamalesDesc">Oaxaqueños, en hoja de plátano. De mole o de verde.</p></div><span class="menu-list__price">$85</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Dishes -->
+  <section class="menu-section" id="dishes">
+    <div class="menu-section__inner">
+      <div class="menu-section__head reveal">
+        <span class="menu-section__num">05</span>
+        <h2 data-i18n="menuPage.dishes">Platillos</h2>
+        <p data-i18n="menuPage.dishesIntro">Cocina oaxaqueña de la abuela. Todo el día.</p>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="menuPage.mole">Enchiladas de Mole Negro</h3><p data-i18n="menuPage.moleDesc">Mole oaxaqueño de 28 ingredientes, hecho en casa.</p></div><span class="menu-list__price">$140</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="menuPage.tlayuda">Tlayuda Oaxaqueña</h3><p data-i18n="menuPage.tlayudaDesc">Tortilla grande, frijoles, quesillo, tasajo o cecina.</p></div><span class="menu-list__price">$165</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="menuPage.memelas">Memelas</h3><p data-i18n="menuPage.memelasDesc">Tres memelas con asiento, quesillo, salsa verde.</p></div><span class="menu-list__price">$95</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="menuPage.caldo">Caldo Tlalpeño</h3><p data-i18n="menuPage.caldoDesc">Pollo, garbanzos, chipotle, aguacate. Reconfortante.</p></div><span class="menu-list__price">$110</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pastries -->
+  <section class="menu-section menu-section--alt" id="pastries">
+    <div class="menu-section__inner">
+      <div class="menu-section__head reveal">
+        <span class="menu-section__num">06</span>
+        <h2 data-i18n="menuPage.pastries">Pan Dulce</h2>
+        <p data-i18n="menuPage.pastriesIntro">Horneado cada mañana. Hasta agotar existencias.</p>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="pastry.conchas">Conchas</h3><p data-i18n="menuPage.conchasDesc">Vainilla, chocolate, o rosa. Masa suave, costra crujiente.</p></div><span class="menu-list__price">$35</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="pastry.polvorones">Polvorones</h3><p data-i18n="menuPage.polvoronesDesc">Galleta tradicional mexicana. Se deshacen en la boca.</p></div><span class="menu-list__price">$30</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="pastry.cuernos">Cuernos de Mantequilla</h3><p data-i18n="menuPage.cuernosDesc">Hojaldre de mantequilla laminado, horneado hasta dorar.</p></div><span class="menu-list__price">$45</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="pastry.churros">Churros con Chocolate</h3><p data-i18n="menuPage.churrosDesc">Recién fritos, azucarados, con chocolate caliente al lado.</p></div><span class="menu-list__price">$55</span></li>
+        <li class="menu-list__item reveal"><div class="menu-list__text"><h3 data-i18n="pastry.empanadas">Empanadas de Fruta</h3><p data-i18n="menuPage.empanadasDesc">Guayaba, piña, o calabaza. Según la estación.</p></div><span class="menu-list__price">$50</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA back home -->
+  <section class="page-cta reveal">
+    <div class="page-cta__inner">
+      <p data-i18n="menuPage.footerNote">¿Listo para probarlo?</p>
+      <a href="index.html#contact" class="btn btn--primary" data-i18n="menuPage.visitUs">Ven a Visitarnos</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer__top">
+      <div class="footer__brand reveal">
+        <div class="footer__logo">CAFÉ MADERA<sup>®</sup></div>
+        <p data-i18n="footer.tagline">Tostado con carácter.<br>Oaxaca, México.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+      <div class="footer__col reveal" style="--delay:0.1s">
+        <h4 data-i18n="footer.visitUs">Visítanos</h4>
+        <p data-i18n="footer.address">Calle Independencia 42<br>Centro Histórico<br>Oaxaca de Juárez, Oax.</p>
+      </div>
+      <div class="footer__col reveal" style="--delay:0.2s">
+        <h4 data-i18n="footer.hours">Horario</h4>
+        <ul class="footer__hours">
+          <li><span data-i18n="footer.weekdays">Lun – Vie</span><span>7:00 – 21:00</span></li>
+          <li><span data-i18n="footer.weekends">Sáb – Dom</span><span>8:00 – 22:00</span></li>
+        </ul>
+      </div>
+      <div class="footer__col reveal" style="--delay:0.3s">
+        <h4 data-i18n="footer.newsletter">Mantente Conectado</h4>
+        <p data-i18n="footer.newsletterSub">Suscríbete para recibir noticias sobre nuestros granos y eventos.</p>
+        <form class="footer__form" onsubmit="return false;">
+          <input type="email" data-i18n-placeholder="footer.emailPlaceholder" placeholder="tu@email.com" aria-label="Email">
+          <button type="submit" data-i18n="footer.subscribe">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p data-i18n="footer.rights">© 2025 Café Madera. Todos los derechos reservados.</p>
+      <nav class="footer__nav">
+        <a href="#" data-i18n="footer.privacy">Privacidad</a>
+        <a href="#" data-i18n="footer.terms">Términos</a>
+        <a href="#" data-i18n="footer.cookies">Cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

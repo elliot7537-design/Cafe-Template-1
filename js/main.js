@@ -227,6 +227,118 @@ const translations = {
     "footer.privacy":       "Privacidad",
     "footer.terms":         "Términos",
     "footer.cookies":       "Cookies",
+
+    /* Menu subpage */
+    "menuPage.label":        "LA CARTA COMPLETA · EST. 2015",
+    "menuPage.title1":       "Todo Lo Que",
+    "menuPage.title2":       "Servimos.",
+    "menuPage.body":         "Desde el primer sorbo hasta el último. Café recién tostado, té suelto, matcha ceremonial y cocina oaxaqueña hecha todas las mañanas.",
+    "menuPage.dishes":       "Platillos",
+    "menuPage.pastries":     "Pan Dulce",
+    "menuPage.coffeeIntro":  "De la prensa francesa al espresso de una sola finca. Todos nuestros granos vienen de fincas oaxaqueñas.",
+    "menuPage.teaIntro":     "Hojas sueltas, infusiones artesanales. Servidos en tetera de vidrio.",
+    "menuPage.matchaIntro":  "Matcha ceremonial japonés, molido en piedra. Preparado al momento.",
+    "menuPage.breakfastIntro":"Servido de 7am a mediodía. Huevos del día, tortillas hechas a mano.",
+    "menuPage.dishesIntro":  "Cocina oaxaqueña de la abuela. Todo el día.",
+    "menuPage.pastriesIntro":"Horneado cada mañana. Hasta agotar existencias.",
+    "menuPage.espressoDesc": "Doble shot. Cuerpo denso, crema espesa, notas de chocolate amargo.",
+    "menuPage.americanoDesc":"Espresso largo, agua filtrada. Limpio y directo.",
+    "menuPage.cafeOllaDesc": "Piloncillo, canela y granos tatemados. Servido en jarrito de barro.",
+    "menuPage.latteDesc":    "Espresso doble, leche vaporizada sedosa, microespuma.",
+    "menuPage.cappuccinoDesc":"Espresso, leche y espuma seca en tercios perfectos.",
+    "menuPage.mocha":        "Mocha de Oaxaca",
+    "menuPage.mochaDesc":    "Espresso con chocolate de metate, leche y un toque de canela.",
+    "menuPage.coldBrew":     "Cold Brew",
+    "menuPage.coldBrewDesc": "Extracción en frío de 18 horas. Suave, dulce, sin amargor.",
+    "menuPage.flatWhite":    "Flat White",
+    "menuPage.flatWhiteDesc":"Doble ristretto, leche microespuma densa. Café intenso.",
+    "menuPage.hibiscoDesc":  "Flor de jamaica fría o caliente. Ácido, refrescante.",
+    "menuPage.verdeDesc":    "Sencha premium. Vegetal, ligeramente dulce.",
+    "menuPage.chaiDesc":     "Mezcla casera: cardamomo, clavo, canela, anís, leche.",
+    "menuPage.manzanaDesc":  "Manzana seca, canela, cáscara de naranja.",
+    "menuPage.mentaDesc":    "Hierbabuena fresca del huerto, azúcar al gusto.",
+    "menuPage.earlGrey":     "Earl Grey",
+    "menuPage.earlGreyDesc": "Té negro con bergamota. Aromático y clásico.",
+    "menuPage.matchaLatteDesc":"Matcha grado ceremonial, leche entera.",
+    "menuPage.matchaOatDesc":"Leche de avena, textura cremosa sin lácteos.",
+    "menuPage.matchaIceDesc":"Servido sobre hielo. Refrescante y vegetal.",
+    "menuPage.matchaCinnamonDesc":"Un toque de canela mexicana. Especiado y suave.",
+    "menuPage.matchaColdDesc":"Matcha infusionado en frío 12 horas. Sedoso.",
+    "menuPage.chilaquilesDesc":"Verdes o rojos. Con huevo o pollo. Crema y queso Oaxaca.",
+    "menuPage.huevosDesc":   "Dos huevos estrellados sobre tortilla, salsa roja tatemada.",
+    "menuPage.avocadoDesc":  "Pan de masa madre, aguacate, rábano, limón, chile piquín.",
+    "menuPage.enchiladasDesc":"Tres enchiladas con huevo, salsa y frijoles de olla.",
+    "menuPage.tamalesDesc":  "Oaxaqueños, en hoja de plátano. De mole o de verde.",
+    "menuPage.mole":         "Enchiladas de Mole Negro",
+    "menuPage.moleDesc":     "Mole oaxaqueño de 28 ingredientes, hecho en casa.",
+    "menuPage.tlayuda":      "Tlayuda Oaxaqueña",
+    "menuPage.tlayudaDesc":  "Tortilla grande, frijoles, quesillo, tasajo o cecina.",
+    "menuPage.memelas":      "Memelas",
+    "menuPage.memelasDesc":  "Tres memelas con asiento, quesillo, salsa verde.",
+    "menuPage.caldo":        "Caldo Tlalpeño",
+    "menuPage.caldoDesc":    "Pollo, garbanzos, chipotle, aguacate. Reconfortante.",
+    "menuPage.conchasDesc":  "Vainilla, chocolate, o rosa. Masa suave, costra crujiente.",
+    "menuPage.polvoronesDesc":"Galleta tradicional mexicana. Se deshacen en la boca.",
+    "menuPage.cuernosDesc":  "Hojaldre de mantequilla laminado, horneado hasta dorar.",
+    "menuPage.churrosDesc":  "Recién fritos, azucarados, con chocolate caliente al lado.",
+    "menuPage.empanadasDesc":"Guayaba, piña, o calabaza. Según la estación.",
+    "menuPage.footerNote":   "¿Listo para probarlo?",
+    "menuPage.visitUs":      "Ven a Visitarnos",
+
+    /* Shop subpage */
+    "shopPage.label":        "GRANOS DE OAXACA · TOSTADOS LOS LUNES",
+    "shopPage.title1":       "Café Para",
+    "shopPage.title2":       "Llevar a Casa.",
+    "shopPage.body":         "Tostados en pequeñas tandas cada lunes. Cada bolsa lleva la fecha de tostado. Pide antes del martes y llega fresquito.",
+    "shopPage.pluma":        "Pluma Hidalgo",
+    "shopPage.plumaNotes":   "Naranja · Mandarina · Miel",
+    "shopPage.decaf":        "Descafeinado Suizo",
+    "shopPage.decafNotes":   "Agua · Sin químicos · Dulce",
+    "shopPage.sampler":      "Paquete Degustación",
+    "shopPage.samplerNotes": "3 tostes · 120g c/u · Guía incluida",
+    "shopPage.samplerWeight":"/ 3 × 120g",
+    "shopPage.bundle":       "BUNDLE",
+    "shopPage.ship1":        "Envío Nacional",
+    "shopPage.ship1Desc":    "Gratis en pedidos mayores a $500 MXN. 2–4 días hábiles.",
+    "shopPage.ship2":        "Tostado Fresco",
+    "shopPage.ship2Desc":    "Enviamos la semana del tostado. Fecha impresa en la bolsa.",
+    "shopPage.ship3":        "Suscripción",
+    "shopPage.ship3Desc":    "¿Lo quieres cada mes? Suscripciones próximamente.",
+    "shopPage.footerNote":   "¿Necesitas ayuda para elegir?",
+    "shopPage.contact":      "Escríbenos",
+
+    /* Careers subpage */
+    "careersPage.label":     "ÚNETE AL EQUIPO",
+    "careersPage.title1":    "Manos Que",
+    "careersPage.title2":    "No Tiemblan.",
+    "careersPage.body":      "Buscamos gente con alma — baristas que cuidan cada sorbo, cocineros que respetan la receta, horneros que empiezan a las 5am.",
+    "careersPage.valuesTitle":"Por Qué Trabajar Con Nosotros",
+    "careersPage.value1Title":"Pago Justo",
+    "careersPage.value1Desc":"Salarios por encima del promedio local. Bonos mensuales por desempeño. Propinas compartidas.",
+    "careersPage.value2Title":"Capacitación Continua",
+    "careersPage.value2Desc":"Talleres de extracción, cata de granos, latte art. Aprende del equipo más experimentado de Oaxaca.",
+    "careersPage.value3Title":"Horarios Dignos",
+    "careersPage.value3Desc":"Turnos de 6 horas. Dos días libres seguidos. Domingos cada dos semanas.",
+    "careersPage.value4Title":"Café Gratis",
+    "careersPage.value4Desc":"Todo el que quieras durante tu turno. Una bolsa de 340g al mes para llevarte a casa.",
+    "careersPage.positionsTitle":"Posiciones Abiertas",
+    "careersPage.fullTime":  "TIEMPO COMPLETO",
+    "careersPage.partTime":  "MEDIO TIEMPO",
+    "careersPage.internship":"PRÁCTICAS",
+    "careersPage.frontHouse":"BARRA",
+    "careersPage.kitchen":   "COCINA",
+    "careersPage.bakery":    "HORNERÍA",
+    "careersPage.oaxaca":    "Oaxaca Centro",
+    "careersPage.apply":     "Aplicar",
+    "careersPage.pos1Title": "Barista de Barra",
+    "careersPage.pos1Desc":  "Turno matutino, 6am – 1pm. Preparas espresso, extracciones V60, matcha ceremonial. Experiencia preferida pero no obligatoria — entrenamos desde cero.",
+    "careersPage.pos2Title": "Cocinero de Desayunos",
+    "careersPage.pos2Desc":  "Turno 6am – 2pm. Chilaquiles, huevos rancheros, tlayudas. Buscamos a alguien que conozca la cocina oaxaqueña — la abuela sería la mejor candidata.",
+    "careersPage.pos3Title": "Hornero / Pan Dulce",
+    "careersPage.pos3Desc":  "Turno 4am – 10am, cuatro días a la semana. Conchas, polvorones, cuernos. Experiencia obligatoria.",
+    "careersPage.pos4Title": "Pasante de Tostado",
+    "careersPage.pos4Desc":  "Programa de 3 meses. Aprende a calibrar tostadora Probat, perfilar granos, catar. Remunerado.",
+    "careersPage.spontaneous":"¿No ves tu puesto? Mándanos tu CV de todas formas a <a href=\"mailto:empleo@cafemadera.mx\">empleo@cafemadera.mx</a>.",
   },
 
   en: {
@@ -373,11 +485,127 @@ const translations = {
     "footer.privacy":       "Privacy",
     "footer.terms":         "Terms",
     "footer.cookies":       "Cookies",
+
+    /* Menu subpage */
+    "menuPage.label":        "THE FULL MENU · EST. 2015",
+    "menuPage.title1":       "Everything",
+    "menuPage.title2":       "We Serve.",
+    "menuPage.body":         "From the first sip to the last. Fresh-roasted coffee, loose-leaf tea, ceremonial matcha, and Oaxacan cooking made every morning.",
+    "menuPage.dishes":       "Dishes",
+    "menuPage.pastries":     "Pan Dulce",
+    "menuPage.coffeeIntro":  "From French press to single-origin espresso. Every bean is from an Oaxacan farm.",
+    "menuPage.teaIntro":     "Loose leaves, artisan infusions. Served in a glass teapot.",
+    "menuPage.matchaIntro":  "Japanese ceremonial matcha, stone-ground. Made to order.",
+    "menuPage.breakfastIntro":"Served 7am to noon. Fresh eggs, hand-pressed tortillas.",
+    "menuPage.dishesIntro":  "Grandma's Oaxacan kitchen. All day.",
+    "menuPage.pastriesIntro":"Baked every morning. Until we sell out.",
+    "menuPage.espressoDesc": "Double shot. Dense body, thick crema, dark chocolate notes.",
+    "menuPage.americanoDesc":"Long espresso, filtered water. Clean and direct.",
+    "menuPage.cafeOllaDesc": "Piloncillo, cinnamon, charred beans. Served in a clay jarrito.",
+    "menuPage.latteDesc":    "Double espresso, silky steamed milk, microfoam.",
+    "menuPage.cappuccinoDesc":"Espresso, milk, dry foam in perfect thirds.",
+    "menuPage.mocha":        "Oaxaca Mocha",
+    "menuPage.mochaDesc":    "Espresso with stone-ground chocolate, milk, a touch of cinnamon.",
+    "menuPage.coldBrew":     "Cold Brew",
+    "menuPage.coldBrewDesc": "18-hour cold extraction. Smooth, sweet, no bitterness.",
+    "menuPage.flatWhite":    "Flat White",
+    "menuPage.flatWhiteDesc":"Double ristretto, dense microfoam. Intense coffee.",
+    "menuPage.hibiscoDesc":  "Hibiscus flower, hot or iced. Tart, refreshing.",
+    "menuPage.verdeDesc":    "Premium sencha. Vegetal, lightly sweet.",
+    "menuPage.chaiDesc":     "House blend: cardamom, clove, cinnamon, anise, milk.",
+    "menuPage.manzanaDesc":  "Dried apple, cinnamon, orange peel.",
+    "menuPage.mentaDesc":    "Fresh mint from the garden, sugar to taste.",
+    "menuPage.earlGrey":     "Earl Grey",
+    "menuPage.earlGreyDesc": "Black tea with bergamot. Aromatic, classic.",
+    "menuPage.matchaLatteDesc":"Ceremonial-grade matcha, whole milk.",
+    "menuPage.matchaOatDesc":"Oat milk, creamy without dairy.",
+    "menuPage.matchaIceDesc":"Over ice. Refreshing and vegetal.",
+    "menuPage.matchaCinnamonDesc":"A touch of Mexican cinnamon. Spiced and smooth.",
+    "menuPage.matchaColdDesc":"12-hour cold-infused matcha. Silky.",
+    "menuPage.chilaquilesDesc":"Green or red. With egg or chicken. Crema and Oaxaca cheese.",
+    "menuPage.huevosDesc":   "Two sunny eggs over tortilla, charred red salsa.",
+    "menuPage.avocadoDesc":  "Sourdough, avocado, radish, lime, chile piquín.",
+    "menuPage.enchiladasDesc":"Three enchiladas with egg, salsa, and pot beans.",
+    "menuPage.tamalesDesc":  "Oaxacan, in banana leaf. Mole or green.",
+    "menuPage.mole":         "Black Mole Enchiladas",
+    "menuPage.moleDesc":     "Oaxacan black mole with 28 ingredients, made in house.",
+    "menuPage.tlayuda":      "Oaxacan Tlayuda",
+    "menuPage.tlayudaDesc":  "Large tortilla, beans, quesillo, tasajo or cecina.",
+    "menuPage.memelas":      "Memelas",
+    "menuPage.memelasDesc":  "Three memelas with asiento, quesillo, green salsa.",
+    "menuPage.caldo":        "Caldo Tlalpeño",
+    "menuPage.caldoDesc":    "Chicken, chickpeas, chipotle, avocado. Comfort.",
+    "menuPage.conchasDesc":  "Vanilla, chocolate, or pink. Soft crumb, crunchy top.",
+    "menuPage.polvoronesDesc":"Traditional Mexican cookie. Melts in the mouth.",
+    "menuPage.cuernosDesc":  "Laminated butter croissants, baked golden.",
+    "menuPage.churrosDesc":  "Fresh-fried, sugared, with hot chocolate on the side.",
+    "menuPage.empanadasDesc":"Guava, pineapple, or squash. Depending on the season.",
+    "menuPage.footerNote":   "Ready to try it?",
+    "menuPage.visitUs":      "Come Visit",
+
+    /* Shop subpage */
+    "shopPage.label":        "OAXACAN BEANS · ROASTED EVERY MONDAY",
+    "shopPage.title1":       "Coffee To",
+    "shopPage.title2":       "Take Home.",
+    "shopPage.body":         "Roasted in small batches every Monday. Each bag is printed with its roast date. Order before Tuesday and it arrives fresh.",
+    "shopPage.pluma":        "Pluma Hidalgo",
+    "shopPage.plumaNotes":   "Orange · Mandarin · Honey",
+    "shopPage.decaf":        "Swiss Water Decaf",
+    "shopPage.decafNotes":   "Water · No chemicals · Sweet",
+    "shopPage.sampler":      "Tasting Sampler",
+    "shopPage.samplerNotes": "3 roasts · 120g each · Guide included",
+    "shopPage.samplerWeight":"/ 3 × 120g",
+    "shopPage.bundle":       "BUNDLE",
+    "shopPage.ship1":        "Nationwide Shipping",
+    "shopPage.ship1Desc":    "Free on orders over $500 MXN. 2–4 business days.",
+    "shopPage.ship2":        "Fresh Roasted",
+    "shopPage.ship2Desc":    "We ship the week of the roast. Date printed on the bag.",
+    "shopPage.ship3":        "Subscription",
+    "shopPage.ship3Desc":    "Want it every month? Subscriptions coming soon.",
+    "shopPage.footerNote":   "Need help choosing?",
+    "shopPage.contact":      "Write Us",
+
+    /* Careers subpage */
+    "careersPage.label":     "JOIN THE TEAM",
+    "careersPage.title1":    "Hands That",
+    "careersPage.title2":    "Don't Shake.",
+    "careersPage.body":      "We're looking for people with soul — baristas who mind every sip, cooks who respect the recipe, bakers who start at 5am.",
+    "careersPage.valuesTitle":"Why Work With Us",
+    "careersPage.value1Title":"Fair Pay",
+    "careersPage.value1Desc":"Wages above the local average. Monthly performance bonuses. Pooled tips.",
+    "careersPage.value2Title":"Ongoing Training",
+    "careersPage.value2Desc":"Extraction workshops, bean cupping, latte art. Learn from Oaxaca's most experienced team.",
+    "careersPage.value3Title":"Humane Hours",
+    "careersPage.value3Desc":"6-hour shifts. Two consecutive days off. Every other Sunday.",
+    "careersPage.value4Title":"Free Coffee",
+    "careersPage.value4Desc":"All you want during your shift. A 340g bag per month to take home.",
+    "careersPage.positionsTitle":"Open Positions",
+    "careersPage.fullTime":  "FULL-TIME",
+    "careersPage.partTime":  "PART-TIME",
+    "careersPage.internship":"INTERNSHIP",
+    "careersPage.frontHouse":"FRONT-HOUSE",
+    "careersPage.kitchen":   "KITCHEN",
+    "careersPage.bakery":    "BAKERY",
+    "careersPage.oaxaca":    "Oaxaca Centro",
+    "careersPage.apply":     "Apply",
+    "careersPage.pos1Title": "Bar Barista",
+    "careersPage.pos1Desc":  "Morning shift, 6am – 1pm. Espresso, V60 pour-overs, ceremonial matcha. Experience preferred but not required — we train from scratch.",
+    "careersPage.pos2Title": "Breakfast Cook",
+    "careersPage.pos2Desc":  "6am – 2pm shift. Chilaquiles, huevos rancheros, tlayudas. We want someone who knows Oaxacan kitchens — grandma would be the top candidate.",
+    "careersPage.pos3Title": "Baker / Pan Dulce",
+    "careersPage.pos3Desc":  "4am – 10am, four days a week. Conchas, polvorones, croissants. Experience required.",
+    "careersPage.pos4Title": "Roasting Intern",
+    "careersPage.pos4Desc":  "3-month program. Learn to dial in the Probat, profile beans, cup coffee. Paid.",
+    "careersPage.spontaneous":"Don't see your role? Send us your CV anyway at <a href=\"mailto:empleo@cafemadera.mx\">empleo@cafemadera.mx</a>.",
   }
 };
 
 /* --- State ----------------------------------------------- */
-let currentLang = 'es';
+const LANG_KEY = 'cafemadera.lang';
+let currentLang = (() => {
+  try { return localStorage.getItem(LANG_KEY) === 'en' ? 'en' : 'es'; }
+  catch (_) { return 'es'; }
+})();
 let countersAnimated = false;
 
 /* --- DOM Helpers ----------------------------------------- */
@@ -387,7 +615,8 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 /* --- Loader ---------------------------------------------- */
 window.addEventListener('load', () => {
   setTimeout(() => {
-    $('#loader').classList.add('is-hidden');
+    const loader = $('#loader');
+    if (loader) loader.classList.add('is-hidden');
     document.body.classList.remove('loading');
     triggerHeroAnimations();
   }, 1600);
@@ -421,24 +650,28 @@ window.addEventListener('scroll', () => {
 
 /* --- Navbar scroll --------------------------------------- */
 const nav = $('#nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.pageYOffset > 60);
-}, { passive: true });
+if (nav) {
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.pageYOffset > 60);
+  }, { passive: true });
+}
 
 /* --- Mobile nav ------------------------------------------ */
 const hamburger = $('#navHamburger');
 const mobileMenu = $('#navMobile');
-hamburger.addEventListener('click', () => {
-  const open = mobileMenu.classList.toggle('is-open');
-  hamburger.classList.toggle('is-open', open);
-  hamburger.setAttribute('aria-expanded', open);
-});
-$$('.nav__mobile-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.remove('is-open');
-    hamburger.classList.remove('is-open');
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('is-open');
+    hamburger.classList.toggle('is-open', open);
+    hamburger.setAttribute('aria-expanded', open);
   });
-});
+  $$('.nav__mobile-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('is-open');
+      hamburger.classList.remove('is-open');
+    });
+  });
+}
 
 /* --- Language toggle ------------------------------------- */
 function applyTranslations(lang) {
@@ -466,6 +699,7 @@ function switchLanguage() {
 
   setTimeout(() => {
     currentLang = currentLang === 'es' ? 'en' : 'es';
+    try { localStorage.setItem(LANG_KEY, currentLang); } catch (_) {}
     applyTranslations(currentLang);
     requestAnimationFrame(() => {
       els.forEach(el => el.classList.remove('lang-fade'));
@@ -473,8 +707,14 @@ function switchLanguage() {
   }, 200);
 }
 
-$('#langToggle').addEventListener('click', switchLanguage);
-$('#langToggleMobile').addEventListener('click', switchLanguage);
+const langToggleDesktop = $('#langToggle');
+const langToggleMobile  = $('#langToggleMobile');
+if (langToggleDesktop) langToggleDesktop.addEventListener('click', switchLanguage);
+if (langToggleMobile)  langToggleMobile.addEventListener('click', switchLanguage);
+
+// Apply persisted language on load (no animation)
+if (currentLang !== 'es') applyTranslations(currentLang);
+else $$('.lang-toggle').forEach(el => el.dataset.lang = 'es');
 
 /* --- Intersection Observer ------------------------------- */
 const observerOpts = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };

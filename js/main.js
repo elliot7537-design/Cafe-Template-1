@@ -310,6 +310,21 @@ const translations = {
     "shopPage.ship3Desc":    "¿Lo quieres cada mes? Suscripciones próximamente.",
     "shopPage.footerNote":   "¿Necesitas ayuda para elegir?",
     "shopPage.contact":      "Escríbenos",
+    "comingSoon.label":        "TIENDA EN LÍNEA",
+    "comingSoon.title1":       "Estamos",
+    "comingSoon.title2":       "Tostando.",
+    "comingSoon.body":         "Nuestra tienda en línea abre pronto. Estamos calibrando la tostadora, empaquetando las bolsas y asegurando que cada pedido llegue fresco. Déjanos tu correo y serás el primero en saber cuándo lanzamos.",
+    "comingSoon.step1":        "Tostado",
+    "comingSoon.step1Desc":    "Seis perfiles calibrados cada lunes.",
+    "comingSoon.step2":        "Empacado",
+    "comingSoon.step2Desc":    "Bolsas selladas con fecha de tueste.",
+    "comingSoon.step3":        "Envío",
+    "comingSoon.step3Desc":    "Salida cada martes desde Oaxaca.",
+    "comingSoon.emailPlaceholder":"tu@email.com",
+    "comingSoon.notify":       "Avísame",
+    "comingSoon.sent":         "¡Listo! Te avisamos cuando abramos.",
+    "comingSoon.menuCta":      "Mientras Tanto, Ver el Menú",
+    "comingSoon.contactCta":   "Visítanos en Oaxaca",
 
     /* Careers subpage */
     "careersPage.label":     "ÚNETE AL EQUIPO",
@@ -572,6 +587,21 @@ const translations = {
     "shopPage.ship3Desc":    "Want it every month? Subscriptions coming soon.",
     "shopPage.footerNote":   "Need help choosing?",
     "shopPage.contact":      "Write Us",
+    "comingSoon.label":        "ONLINE SHOP",
+    "comingSoon.title1":       "We're",
+    "comingSoon.title2":       "Roasting.",
+    "comingSoon.body":         "Our online shop is launching soon. We're dialing in the roaster, packing the bags, and making sure every order ships fresh. Drop your email and we'll tell you the moment we open.",
+    "comingSoon.step1":        "Roasted",
+    "comingSoon.step1Desc":    "Six profiles dialed in every Monday.",
+    "comingSoon.step2":        "Packed",
+    "comingSoon.step2Desc":    "Bags sealed with the roast date.",
+    "comingSoon.step3":        "Shipped",
+    "comingSoon.step3Desc":    "Leaves Oaxaca every Tuesday.",
+    "comingSoon.emailPlaceholder":"you@email.com",
+    "comingSoon.notify":       "Notify Me",
+    "comingSoon.sent":         "Done! We'll let you know when we open.",
+    "comingSoon.menuCta":      "Meanwhile, See the Menu",
+    "comingSoon.contactCta":   "Visit Us in Oaxaca",
 
     /* Careers subpage */
     "careersPage.label":     "JOIN THE TEAM",
@@ -658,7 +688,8 @@ window.addEventListener('scroll', () => {
 
 /* --- Navbar scroll --------------------------------------- */
 const nav = $('#nav');
-if (nav) {
+const isSubpage = document.body.classList.contains('subpage');
+if (nav && !isSubpage) {
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.pageYOffset > 60);
   }, { passive: true });

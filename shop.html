@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tienda de granos Café Madera — tostes claro, medio y oscuro. Tostados los lunes en Oaxaca.">
+  <meta name="description" content="La tienda de granos de Café Madera está próximamente — suscríbete para enterarte del lanzamiento.">
   <meta name="google" content="notranslate">
-  <title>Tienda — Café Madera</title>
+  <title>Tienda — Próximamente · Café Madera</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -30,7 +30,6 @@
       </div>
       <a href="index.html" class="nav__logo">CAFÉ MADERA<sup>®</sup></a>
       <div class="nav__right">
-        <a href="careers.html" data-i18n="nav.empleo">Empleo</a>
         <a href="index.html#contact" data-i18n="nav.contacto">Contacto</a>
         <a href="index.html#contact" class="nav__location" data-i18n="nav.location">Oaxaca, México</a>
         <button class="lang-toggle notranslate" id="langToggle" aria-label="Toggle language" data-lang="es" translate="no">
@@ -49,7 +48,6 @@
         <a href="shop.html" data-i18n="nav.tienda">Tienda</a>
         <a href="menu.html" data-i18n="nav.menu">Nuestro Menú</a>
         <a href="index.html#testimonials" data-i18n="nav.testimonios">Testimonios</a>
-        <a href="careers.html" data-i18n="nav.empleo">Empleo</a>
         <a href="index.html#contact" data-i18n="nav.contacto">Contacto</a>
         <button class="lang-toggle lang-toggle--mobile notranslate" id="langToggleMobile" aria-label="Toggle language" data-lang="es" translate="no">
           <span class="lang-toggle__opt" data-opt="es">ESP</span>
@@ -60,158 +58,51 @@
     </div>
   </nav>
 
-  <header class="page-hero">
-    <div class="page-hero__inner">
-      <p class="section-label reveal" data-i18n="shopPage.label">GRANOS DE OAXACA · TOSTADOS LOS LUNES</p>
-      <h1 class="page-hero__title">
-        <span class="reveal-line"><span data-i18n="shopPage.title1">Café Para</span></span>
-        <span class="reveal-line"><em data-i18n="shopPage.title2">Llevar a Casa.</em></span>
+  <!-- Coming Soon Hero -->
+  <section class="coming-soon">
+    <div class="coming-soon__bg" aria-hidden="true">
+      <span class="coming-soon__glyph coming-soon__glyph--1">☕</span>
+      <span class="coming-soon__glyph coming-soon__glyph--2">✦</span>
+      <span class="coming-soon__glyph coming-soon__glyph--3">※</span>
+      <span class="coming-soon__glyph coming-soon__glyph--4">✳</span>
+      <span class="coming-soon__glyph coming-soon__glyph--5">◦</span>
+    </div>
+    <div class="coming-soon__inner">
+      <p class="section-label reveal" data-i18n="comingSoon.label">TIENDA EN LÍNEA</p>
+      <h1 class="coming-soon__title page-hero__title">
+        <span class="reveal-line"><span data-i18n="comingSoon.title1">Estamos</span></span>
+        <span class="reveal-line"><em data-i18n="comingSoon.title2">Tostando.</em></span>
       </h1>
-      <p class="page-hero__body reveal" data-i18n="shopPage.body">Tostados en pequeñas tandas cada lunes. Cada bolsa lleva la fecha de tostado. Pide antes del martes y llega fresquito.</p>
-    </div>
-  </header>
+      <p class="coming-soon__body reveal" data-i18n="comingSoon.body">Nuestra tienda en línea abre pronto. Estamos calibrando la tostadora, empaquetando las bolsas y asegurando que cada pedido llegue fresco. Déjanos tu correo y serás el primero en saber cuándo lanzamos.</p>
 
-  <!-- Products grid (6 beans) -->
-  <section class="shop-grid">
-    <div class="shop-grid__inner">
-      <div class="products__grid">
-
-        <article class="bean-card reveal" style="--delay:0.05s">
-          <div class="bean-card__num">01</div>
-          <div class="bean-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="Intenso y Amargo" loading="lazy">
-            <span class="bean-card__roast bean-card__roast--dark" data-i18n="bean.dark">TUESTE OSCURO</span>
-          </div>
-          <div class="bean-card__body">
-            <h3 data-i18n="products.heavy">Intenso &amp; Amargo</h3>
-            <p class="bean-card__notes" data-i18n="bean.notes1">Chocolate · Cacao · Especias</p>
-            <div class="bean-card__foot">
-              <span class="bean-card__price">$280 <em data-i18n="bean.weight">/ 340g</em></span>
-              <a href="#" class="bean-card__btn"><span data-i18n="bean.add">Añadir</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="bean-card bean-card--featured reveal" style="--delay:0.12s">
-          <span class="bean-card__ribbon" data-i18n="bean.popular">MÁS VENDIDO</span>
-          <div class="bean-card__num">02</div>
-          <div class="bean-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" alt="Smooth Criminal" loading="lazy">
-            <span class="bean-card__roast bean-card__roast--medium" data-i18n="bean.medium">TUESTE MEDIO</span>
-          </div>
-          <div class="bean-card__body">
-            <h3 data-i18n="products.smooth">Smooth Criminal</h3>
-            <p class="bean-card__notes" data-i18n="bean.notes2">Caramelo · Avellana · Miel</p>
-            <div class="bean-card__foot">
-              <span class="bean-card__price">$320 <em data-i18n="bean.weight">/ 340g</em></span>
-              <a href="#" class="bean-card__btn"><span data-i18n="bean.add">Añadir</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="bean-card reveal" style="--delay:0.19s">
-          <div class="bean-card__num">03</div>
-          <div class="bean-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="Suave y Aromático" loading="lazy">
-            <span class="bean-card__roast bean-card__roast--light" data-i18n="bean.light">TUESTE CLARO</span>
-          </div>
-          <div class="bean-card__body">
-            <h3 data-i18n="products.soft">Suave &amp; Aromático</h3>
-            <p class="bean-card__notes" data-i18n="bean.notes3">Frutal · Cítrico · Floral</p>
-            <div class="bean-card__foot">
-              <span class="bean-card__price">$300 <em data-i18n="bean.weight">/ 340g</em></span>
-              <a href="#" class="bean-card__btn"><span data-i18n="bean.add">Añadir</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="bean-card reveal" style="--delay:0.26s">
-          <div class="bean-card__num">04</div>
-          <div class="bean-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80" alt="Single Origin Pluma" loading="lazy">
-            <span class="bean-card__roast bean-card__roast--medium" data-i18n="bean.medium">TUESTE MEDIO</span>
-          </div>
-          <div class="bean-card__body">
-            <h3 data-i18n="shopPage.pluma">Pluma Hidalgo</h3>
-            <p class="bean-card__notes" data-i18n="shopPage.plumaNotes">Naranja · Mandarina · Miel</p>
-            <div class="bean-card__foot">
-              <span class="bean-card__price">$340 <em data-i18n="bean.weight">/ 340g</em></span>
-              <a href="#" class="bean-card__btn"><span data-i18n="bean.add">Añadir</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="bean-card reveal" style="--delay:0.33s">
-          <div class="bean-card__num">05</div>
-          <div class="bean-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Descafeinado" loading="lazy">
-            <span class="bean-card__roast bean-card__roast--light" data-i18n="bean.light">TUESTE CLARO</span>
-          </div>
-          <div class="bean-card__body">
-            <h3 data-i18n="shopPage.decaf">Descafeinado Suizo</h3>
-            <p class="bean-card__notes" data-i18n="shopPage.decafNotes">Agua · Sin químicos · Dulce</p>
-            <div class="bean-card__foot">
-              <span class="bean-card__price">$310 <em data-i18n="bean.weight">/ 340g</em></span>
-              <a href="#" class="bean-card__btn"><span data-i18n="bean.add">Añadir</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="bean-card reveal" style="--delay:0.40s">
-          <div class="bean-card__num">06</div>
-          <div class="bean-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Paquete Degustación" loading="lazy">
-            <span class="bean-card__roast bean-card__roast--dark" data-i18n="shopPage.bundle">BUNDLE</span>
-          </div>
-          <div class="bean-card__body">
-            <h3 data-i18n="shopPage.sampler">Paquete Degustación</h3>
-            <p class="bean-card__notes" data-i18n="shopPage.samplerNotes">3 tostes · 120g c/u · Guía incluida</p>
-            <div class="bean-card__foot">
-              <span class="bean-card__price">$520 <em data-i18n="shopPage.samplerWeight">/ 3 × 120g</em></span>
-              <a href="#" class="bean-card__btn"><span data-i18n="bean.add">Añadir</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
+      <div class="coming-soon__steps reveal">
+        <div class="coming-soon__step">
+          <span class="coming-soon__step-num">01</span>
+          <h3 data-i18n="comingSoon.step1">Tostado</h3>
+          <p data-i18n="comingSoon.step1Desc">Seis perfiles calibrados cada lunes.</p>
+        </div>
+        <div class="coming-soon__step">
+          <span class="coming-soon__step-num">02</span>
+          <h3 data-i18n="comingSoon.step2">Empacado</h3>
+          <p data-i18n="comingSoon.step2Desc">Bolsas selladas con fecha de tueste.</p>
+        </div>
+        <div class="coming-soon__step">
+          <span class="coming-soon__step-num">03</span>
+          <h3 data-i18n="comingSoon.step3">Envío</h3>
+          <p data-i18n="comingSoon.step3Desc">Salida cada martes desde Oaxaca.</p>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Shipping / guide strip -->
-  <section class="shop-strip reveal">
-    <div class="shop-strip__inner">
-      <div class="shop-strip__item">
-        <h4 data-i18n="shopPage.ship1">Envío Nacional</h4>
-        <p data-i18n="shopPage.ship1Desc">Gratis en pedidos mayores a $500 MXN. 2–4 días hábiles.</p>
-      </div>
-      <div class="shop-strip__item">
-        <h4 data-i18n="shopPage.ship2">Tostado Fresco</h4>
-        <p data-i18n="shopPage.ship2Desc">Enviamos la semana del tostado. Fecha impresa en la bolsa.</p>
-      </div>
-      <div class="shop-strip__item">
-        <h4 data-i18n="shopPage.ship3">Suscripción</h4>
-        <p data-i18n="shopPage.ship3Desc">¿Lo quieres cada mes? Suscripciones próximamente.</p>
-      </div>
-    </div>
-  </section>
+      <form class="coming-soon__form reveal" onsubmit="event.preventDefault(); this.classList.add('is-sent'); this.querySelector('button').disabled=true;">
+        <input type="email" required data-i18n-placeholder="comingSoon.emailPlaceholder" placeholder="tu@email.com" aria-label="Email">
+        <button type="submit" data-i18n="comingSoon.notify">Avísame</button>
+        <p class="coming-soon__form-sent" data-i18n="comingSoon.sent">¡Listo! Te avisamos cuando abramos.</p>
+      </form>
 
-  <!-- CTA -->
-  <section class="page-cta reveal">
-    <div class="page-cta__inner">
-      <p data-i18n="shopPage.footerNote">¿Necesitas ayuda para elegir?</p>
-      <a href="index.html#contact" class="btn btn--primary" data-i18n="shopPage.contact">Escríbenos</a>
+      <div class="coming-soon__ctas reveal">
+        <a href="menu.html" class="btn btn--primary" data-i18n="comingSoon.menuCta">Mientras Tanto, Ver el Menú</a>
+        <a href="index.html#contact" class="btn btn--outline btn--outline-dark" data-i18n="comingSoon.contactCta">Visítanos en Oaxaca</a>
+      </div>
     </div>
   </section>
 
